@@ -1,0 +1,639 @@
+<!-- build time:Sun Mar 17 2024 00:25:59 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="十年磨一剑" href="http://yoursite.com/rss.xml"><link rel="alternate" type="application/atom+xml" title="十年磨一剑" href="http://yoursite.com/atom.xml"><link rel="alternate" type="application/json" title="十年磨一剑" href="http://yoursite.com/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><meta name="keywords" content="Algorithm"><link rel="canonical" href="http://yoursite.com/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/"><title>Acwing 每日一题 - 算法 | Xh1Xxhg's Home = 十年磨一剑 = Go For 全栈</title><meta name="generator" content="Hexo 5.4.2"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">Acwing 每日一题</h1><div class="meta"><span class="item" title="创建时间：2024-03-16 23:29:08"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2024-03-16T23:29:08+08:00">2024-03-16</time> </span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">本文字数</span> <span>13k</span> <span class="text">字</span> </span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">阅读时长</span> <span>12 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Xh1Xxhg's Home</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="item" rel="index" title="分类于 算法"><span itemprop="name">算法</span></a><meta itemprop="position" content="1"></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://yoursite.com/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="Xh1Xxhg"><meta itemprop="description" content="Go For 全栈, My 网安之路"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="十年磨一剑"></span><div class="body md" itemprop="articleBody"><h1 id="每日一题"><a class="anchor" href="#每日一题">#</a> 每日一题</h1><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9ibG9nL2NvbnRlbnQvNDExNTgv">蓝桥考点解析</span></p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9ibG9nL2NvbnRlbnQvMzIv">由数据范围反推算法复杂度以及算法内容</span></p><h2 id="二分差分"><a class="anchor" href="#二分差分">#</a> 二分 &amp; 差分</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvZGVzY3JpcHRpb24vNTA1Lw==">AcWing 503. 借教室</span></p><p>数据范围 10 的 6 次方 =&gt; 时间复杂度 <code>O(n)或小常数O(nlogn)</code></p><ul><li>总体思路<ul><li><strong>二分</strong>（查找）：设置 mid 为最后一天没出现负值，mid+1 为第一天出现负值</li><li><strong>差分</strong>（判断）：计算每天的剩余教室量，判断是否 &lt;u&gt; 满足最后一天没出现负值 &lt;/u &gt; 的条件</li></ul></li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+typedef long long LL;
+
+const int N = 1000010;
+
+int n,m;
+int w[N];
+int d[N],l[N],r[N];
+// 差分数组
+LL b[N];
+
+bool check(int mid) &#123;
+    memset(b, 0, sizeof b);
+    // 差分数组状态更新
+    for (int i = 1; i &lt;= mid; i ++ ) &#123;
+        b[l[i]] += d[i];
+        b[r[i] + 1] -= d[i];
+    &#125;
+    for (int i = 1; i &lt;= n; i ++ ) &#123;
+        b[i] += b[i - 1];
+        if(b[i] &gt; w[i]) return false;
+    &#125;
+    return true;
+&#125;
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+    for (int i = 1; i &lt;= n; i ++ )
+        scanf(&quot;%d&quot;, &amp;w[i]);
+    for (int i = 1; i &lt;= m; i ++ )
+        scanf(&quot;%d%d%d&quot;, &amp;d[i], &amp;l[i], &amp;r[i]);
+        
+    // l=0表示一个订单都不满足
+    int l = 0, r = m;
+    while (l &lt; r) &#123;
+        int mid = (l + r + 1) &gt;&gt; 1;
+        if (check(mid)) l = mid;
+        // mid不满足条件需要舍弃
+        else r = mid - 1;
+    &#125;
+    
+    if (r == m) puts(&quot;0&quot;);//没动
+    // l=r=mid,mid满足条件，选择不满足条件的mid+1
+    else printf(&quot;-1\n%d\n&quot;, r + 1);
+    
+    return 0;
+&#125;
+</code></pre><h2 id="前缀和"><a class="anchor" href="#前缀和">#</a> 前缀和</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvNTY0Lw==">AcWing 562. 壁画</span></p><p>数据范围 10 的 6 次方 =&gt; 时间复杂度 <code>O(n)或小常数O(nlogn)</code></p><ul><li>画的墙是连续的一段</li><li>毁坏的墙只出现在两端</li><li>画一个坏一个这样的顺序模式，导致最终长度一定是 <code>⌈n/2⌉上取整</code></li><li>可以取中间部分的墙体，以中点划分，被画的部分长分别为 <code>a,b</code> ，定制规则：第一次画中点的墙体，然后哪边毁了画哪边，n 长的墙体分为 <code>a,a-1,1,b,b</code></li><li>前缀和计算</li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 5000010;
+
+int n;
+int s[N];
+char str[N];
+
+int main()
+&#123;
+    // T组测试数据
+    int T;
+    scanf(&quot;%d&quot;, &amp;T);
+    
+    // 按组别数循环
+    for (int cases = 1; cases &lt;= T; cases ++ ) &#123;
+        // 墙体长度
+        scanf(&quot;%d&quot;, &amp;n);
+        // 评分标准序列
+        scanf(&quot;%s&quot;, str + 1);
+        for (int i = 1; i &lt;= n; i++ )
+            // 递进计算每次画墙后的总分
+            s[i] = s[i - 1] + (str[i] - '0');
+            
+        // 从中点开始画
+        int res = 0, m = (n + 1) / 2;
+        for (int i = m; i &lt;= n; i ++ )
+            // 计算前缀和：对半移动
+            res = max(res, s[i] - s[i - m]);
+        printf(&quot;Case #%d: %d\n&quot;, cases, res);
+    &#125;
+    return 0;
+&#125;
+</code></pre><h2 id="差分"><a class="anchor" href="#差分">#</a> 差分</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvNDI2NS8=">AcWing 4262. 空调</span></p><p>数据范围 10 的 5 次方 =&gt; 时间复杂度 <code>O(nlogn)</code></p><ul><li>题意变为差值数组，T=&gt;P 改为 0=&gt;T-P</li><li>利用差分，一段范围内的更新变为两点 <code>b[l]++,b[r+1]--</code> 更新</li><li><strong>下界</strong>：差分数组和为 0，正数负数可以相加抵消 =&gt; 最小的指令次数≥差分数组整数之和，这个下界值即为答案最小数量</li></ul><p>&lt;img src=&quot;C:\Users\LENOVO\Desktop\WorkSpace\LanQiaoBei\images\acwing4262.png&quot; alt=&quot;acwing4262&quot; style=&quot;zoom:50%;&quot; /&gt;</p><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 100010;
+int n;
+int b[N];
+
+int main()
+&#123;
+    scanf(&quot;%d&quot;, &amp;n);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;b[i]);
+    // 算出转换的差值数组
+    for (int i = 1; i &lt;= n; i ++ ) &#123;
+        int m;
+        scanf(&quot;%d&quot;, &amp;m);
+        b[i] -= m;
+    &#125;
+    // 差分数组
+    // 倒序改变值，因为d[]和b[]共用一个数组顺序解决会提前改变b[l]值，导致b[r + 1]值变化
+    // b[l] = d[l] - d[l - 1]
+    // b[r + 1] = d[r + 1] - d[r]
+    for (int i = n + 1; i; i -- ) b[i] -= b[i - 1];
+    
+    // 算出差分数组的正数之和，即为解的下界
+    int res = 0;
+    for (int i = 1; i &lt;= n + 1; i ++ )
+        if(b[i] &gt;= 0)
+            res += b[i];
+    printf(&quot;%d&quot;, res);
+    return 0;
+&#125;
+</code></pre><h2 id="双指针"><a class="anchor" href="#双指针">#</a> 双指针</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3Byb2JsZW0vY29udGVudC85NzIzLw==">AcWing 3745. 牛的学术圈 I</span></p><p>数据范围 10 的 5 次方 =&gt; 时间复杂度 <code>O(nlogn)</code></p><ul><li>需要按照引用次数计算 h 指数，先排序，再考虑条件<ul><li>前 h 篇论文的引用次数都大于等于 h-1（写完综述 + 1 变 h 次）</li><li>其中最多有 L 个数等于 h-1（最多引用）</li></ul></li><li>核心思路：排序后数组为单调递减（ <code>i篇引用≥h，引用次数Ci越大，下标i越靠前</code> ），找到大于等于 h 的最后一个数，获取下标 <code>j</code> ，判断是否下标 <code>j&lt;=L</code> ，同时是否存在 <code>h-j篇引用次数为h-1</code></li><li>一个下标关于另一个下标单调 =&gt; <code>双指针法</code></li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 100010;
+int n,L;
+int w[N];
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;L);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;w[i]);
+    
+    sort(w + 1, w + n + 1, greater&lt;int&gt;());
+    
+    
+    int res = 0;
+    for (int i = 1, j = n; i &lt;= n; i ++ ) &#123;
+        // j没遍历完，同时保证w[j]&gt;=h
+        while (j &amp;&amp; w[j] &lt; i) j--;
+        // i遍历完所有h-1停止，同时保证h-1个数&lt;=L
+        if (w[i] &gt;= i - 1 &amp;&amp; i - j &lt;= L)
+            res = i;
+    &#125;
+    printf(&quot;%d&quot;, res);
+    return 0;
+&#125;
+</code></pre><h2 id="归并排序"><a class="anchor" href="#归并排序">#</a> 归并排序</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvNTA3Lw==">AcWing 505. 火柴排队</span></p><ul><li>需要解决的问题<ul><li>什么情况下距离最小：A、B 都同时以升序 / 降序排列</li><li>如何通过顺序交换实现这个距离： <code>离散化=&gt;映射=&gt;归并排序(代码模板)=&gt;逆序对</code></li></ul></li><li>火柴高度（数值过大，用作数组下标时，可能会超内存）：<strong>离散化（只考虑相对大小关系）</strong>，将 A 和 B 都变为 <code>1,...,n</code> 的排列分布， <code>离散化是一种将原始数据映射到连续的整数集合的过程，通常用于处理离散值范围较大的情况</code></li><li>离散化方法<ul><li>排序 + 二分</li><li>lambda 表达式法</li></ul></li><li>简化问题：A 有序，只能交换 B（因为每次只能交换相邻数，所以最小交换次数是<strong>逆序对</strong>，求逆序对 =&gt; <code>归并排序</code> 、 <code>树状数组</code> ），若只能交换 A，也类似</li><li>回归问题，A，B 都无序，但是因为 <code>离散化后分布一致</code> ，利用<strong>映射</strong>的思想，将 A 中的数映射为升序，只需要将 B 中与之对应的数映射变换即可，生成的新序列与原序列在本质上别无二致</li></ul><p><code>！！！编译提交之前需要删除注释，否则超时</code></p><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 100010, MOD = 99999997;
+int n;
+// 
+int a[N], b[N], c[N], p[N];
+
+// a,b离散化
+void work(int a[]) &#123;
+    // 存入顺序
+    for (int i = 1; i &lt;= n; i ++ ) p[i] = i;
+    sort(p + 1, p + n + 1, [&amp;](int x, int y)&#123;
+        return a[x] &lt; a[y];
+    &#125;);
+    // 离散化实现
+    for (int i = 1; i &lt;= n; i ++ ) a[p[i]] = i;
+&#125;
+
+// 归并排序计算逆序对
+int merge_sort(int l, int r) &#123;
+    if (l &gt;= r) return 0;
+    int mid = (l + r) &gt;&gt; 1;
+    // 分别递归调用左右部分，逆序对相加取模
+    int res = (merge_sort(1, mid) + merge_sort(mid + 1, r) )% MOD;
+    
+    int i = 1, j = mid + 1, k = 0;
+    // 较小的元素放入辅助数组p[]
+    while (i &lt;= mid &amp;&amp; j &lt;= r) &#123;
+        if (b[i] &lt; b[j]) p[k ++ ] = b[i ++ ];
+        // res增加mid - i + 1，表示左半部分剩余的元素都大于b[j]
+        else p[k ++ ] = b[j ++ ], res = (res + mid - i + 1) % MOD;
+    &#125;
+    // 剩余的元素复制回原数组b[]
+    while (i &lt;= mid) p[k ++ ] = b[i ++ ];
+    while (j &lt;= r) p[k ++ ] = b[j ++ ];
+    
+    for (int i = 1, j = 0; j &lt; k; i ++ , j ++ ) b[i] = p[j]; 
+    return res;
+&#125;
+
+int main()
+&#123;
+    scanf(&quot;%d&quot;, &amp;n);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;a[i]);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;b[i]);
+    
+    work(a), work(b);
+    // c存入a的顺序映射关系
+    for (int i = 1; i &lt;= n; i ++ ) c[a[i]] = i;
+    // b按照c存入的映射关系完成影身
+    for (int i = 1; i &lt;= n; i ++ ) b[i] = c[b[i]];
+    
+    // 利用归并排序求得逆序对
+    printf(&quot;%d\n&quot;, merge_sort(1, n));
+    
+    
+    return 0;
+&#125;
+</code></pre><h2 id="多路归并"><a class="anchor" href="#多路归并">#</a> 多路归并</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvMTI2NC8=">AcWing 1262. 鱼塘钓鱼</span></p><ul><li>贪心：路程时间 + 钓鱼时间（一定是直线走法，不会迂回）</li><li>多路归并：多个单调递减的鱼塘序列合并为一个有序序列， <code>从当前每个鱼塘的数量中选择最大的</code></li></ul><pre><code class="language-c++">#include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 110;
+// 鱼的数量，每分钟钓鱼数，两鱼塘间隔时间，每个鱼塘的钓鱼停留时间
+int num[N], dect[N], t[N], spend[N];
+
+// 鱼塘剩余的鱼数量
+int get(int k) &#123;
+    return max(0, num[k] - dect[k] * spend[k]);
+&#125;
+
+// work(上一个满足方案的鱼塘编号, 剩余钓鱼次数1次/min)
+int work(int n, int ddl) &#123;
+    int res = 0;
+    // 初始化每个鱼塘钓鱼时间为0
+    memset(spend, 0, sizeof spend);
+    
+    // 剩余钓鱼次数
+    for (int i = 0; i &lt; ddl; i ++ ) &#123;
+        // 从第一个开始和后面每个鱼塘比较，找出最大
+        int t = 1;
+        for (int j = 2; j &lt;= n; j ++ )
+            if (get(t) &lt; get(j))
+                t = j;
+        res += get(t);
+        spend[t] ++ ;
+    &#125;
+    return res;
+&#125;
+
+int main()
+&#123;
+    int n, ddl;
+    scanf(&quot;%d&quot;, &amp;n);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;num[i]);
+    for (int i = 1; i &lt;= n; i ++ ) scanf(&quot;%d&quot;, &amp;dect[i]);
+    for (int i = 2; i &lt;= n; i ++ ) &#123;
+        scanf(&quot;%d&quot;, &amp;t[i]);
+        t[i] += t[i - 1];
+    &#125;
+    scanf(&quot;%d&quot;, &amp;ddl);
+    
+    int res = 0;
+    // 从第一个鱼塘开始找到最大的钓鱼数
+    for (int i = 1; i &lt;= n; i ++ )
+        res = max(res, work(i, ddl - t[i]));
+    
+    printf(&quot;%d\n&quot;, res);
+    
+    return 0;
+&#125;
+</code></pre><h2 id="贡献法"><a class="anchor" href="#贡献法">#</a> 贡献法</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3Byb2JsZW0vY29udGVudC85NzQxLw==">AcWing 4261. 孤独的照片</span></p><ul><li><p>先枚举区间 <code>起点+终点</code> ，再枚举牛， <code>O(n^2)</code> ；先枚举牛 ( <code>每头牛对孤独区间的贡献</code> )，再枚举区间，找到牛对应的孤独区间， <code>O(n)</code></p></li><li><p>枚举牛：获得每头牛位置之前的子区间中以 G 为分隔符的最大长度</p></li><li><p>连续牛的个数不少于</p><ul><li>孤独的牛 G 左右两边至少有一个另一种牛 H，LR 个可能</li><li>孤独的牛 G 左无 H，右边至少两个 H， R-1 个可能</li><li>孤独的牛 G 右无 H，左边至少两个 H， L-1 个可能</li></ul></li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 500010;
+typedef long long LL;
+
+int n;
+char str[N];
+int l[N], r[N];
+
+int main() &#123;
+    scanf(&quot;%d%s&quot;, &amp;n, str);
+    // l[],r[]从左到右和从右到左每个位置的子串中以 'G' 为分隔符的最大长度
+    // sh, sg表示当前位置之前H或G连续的个数
+    for (int i = 0, sh = 0, sg = 0; i &lt; n; i ++ ) &#123;
+        if (str[i] == 'G') l[i] = sh, sg ++ , sh = 0;
+        else l[i] = sg, sh ++ , sg = 0;
+    &#125;
+    
+    for (int i = n -1, sg = 0, sh = 0; i &gt;= 0; i -- ) &#123;
+        if(str[i] == 'G') r[i] = sh, sg ++ , sh = 0;
+        else r[i] = sg, sh ++ , sg = 0;
+    &#125;
+    
+        
+    LL res = 0;
+    for (int i = 0; i &lt; n; i ++ )
+        // 给(LL)加括号，提前进行类型转换
+        res += (LL)l[i] * r[i] + max(r[i] - 1, 0) + max(l[i] - 1, 0);
+    
+    printf(&quot;%lld\n&quot;, res);
+    
+    return 0;
+&#125;
+</code></pre><p><strong>更易理解做法</strong></p><pre><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+const int N = 500010;
+typedef long long LL;
+
+int n;
+char s[N];
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; s; // 读入字符串长度和字符串内容
+
+    LL res = 0; // 用来存储结果的变量，初始化为0
+
+    for (int i = 0; i &lt; n; i ++) // 遍历字符串中的每个位置
+    &#123;
+        char x = s[i]; // 当前位置的字符
+        int l = i - 1, r = i + 1; // 初始化左右两个指针
+
+        // 向左寻找以当前字符为分隔符的最长子串
+        while (l &gt;= 0 &amp;&amp; x != s[l]) l --;
+        // 向右寻找以当前字符为分隔符的最长子串
+        while (r &lt; n &amp;&amp; x != s[r]) r ++;
+
+        int L = i - l - 1, R = r - i - 1; // 计算左右两侧子串的长度
+        res += (LL)L * R; // 更新结果，累加以当前位置为分隔符的子串对数
+        if (L &gt; 0) res += L - 1; // 如果左侧子串长度大于0，加上左侧子串内部的分隔符对数
+        if (R &gt; 0) res += R - 1; // 如果右侧子串长度大于0，加上右侧子串内部的分隔符对数
+    &#125;
+
+    cout &lt;&lt; res &lt;&lt; endl; // 输出结果
+
+    return 0; 
+&#125;
+</code></pre><h2 id="日期问题"><a class="anchor" href="#日期问题">#</a> 日期问题</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvMzUwMS8=">AcWing 3498. 日期差值</span></p><ul><li>数据范围：按天枚举，100 组 10000 年，估摸 3.65 亿次，有<strong>超时的风险</strong></li><li>思路变换为<ul><li>两个时间的差值 = abs (第一个时间到公元第一天天数 - 第二个时间到公元第一天的天数)</li></ul></li></ul><p>这里需要注意，因为有 <code>100</code> 组数据，需要用 <code>while</code> 循环读数据</p><pre><code class="language-c++">scanf返回值：
+如果只有a被成功读入，返回值为1；
+如果a和b都未被成功读入，返回值为0；
+如果遇到错误或遇到end of file（文件结束），返回值为EOF（即-1）。
+~的意义：EOF（-1）补码表示为全1，按位取反后为全0，即false
+~scanf表示while循环在读完所有组别数据后就终止循环
+</code></pre><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int month[] = &#123;
+    0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+&#125;;
+
+int is_leap(int year) &#123;
+    if (year % 4 == 0 &amp;&amp; year % 100 || year % 400 == 0)
+        return 1;
+    return 0;
+&#125;
+
+// 获取每个月天数
+int get_days(int y, int m) &#123;
+    if (m == 2) return 28 + is_leap(y);
+    return month[m];
+&#125;
+
+int calc(int y, int m, int d) &#123;
+    int res = 0;
+    for (int i = 1; i &lt; y; i ++ )
+        res += 365 + is_leap(i);
+    for (int i = 1; i &lt; m; i ++ )
+        res += get_days(y, i);
+    return res + d;
+&#125;
+
+
+int main()
+&#123;
+    int y1, y2, m1, m2, d1, d2;
+    while (~scanf(&quot;%04d%02d%02d\n%04d%02d%02d&quot;, &amp;y1, &amp;m1, &amp;d1, &amp;y2, &amp;m2, &amp;d2))
+        printf(&quot;%d\n&quot;, abs(calc(y1, m1, d1) - calc(y2, m2, d2)) + 1);
+    return 0;
+&#125;
+</code></pre><h2 id="区间合并"><a class="anchor" href="#区间合并">#</a> 区间合并</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3B1bmNoX3RoZV9jbG9jay8zNzgyLw==">AcWing 1343. 挤牛奶</span></p><p>数据范围 10 的 5 次方 =&gt; 时间复杂度 <code>O(nlogn)</code></p><pre><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+#define x first
+#define y second
+
+using namespace std;
+
+typedef pair&lt;int,int&gt; PII;
+
+const int N = 5010;
+int n;
+PII segs[N];
+
+int main() &#123;
+    // 输入区间个数
+    scanf(&quot;%d&quot;, &amp;n);
+
+    // 输入各个区间的起始和结束点，并存储在数组segs中
+    for (int i = 0; i &lt; n; i ++ ) 
+        scanf(&quot;%d%d&quot;, &amp;segs[i].x, &amp;segs[i].y);
+
+    // 按区间的起始点进行升序排序
+    sort(segs, segs + n);
+
+    // 初始化最长连续区间和最长间隔区间的结果为0
+    int res1 = 0, res2 = 0;
+
+    // 初始化当前连续区间的左右边界为第一个区间的起始和结束点
+    int l = segs[0].x, r = segs[0].y;
+
+    // 遍历区间数组
+    for (int i = 1; i &lt; n; i ++ )
+        // 如果当前区间的起始点小于等于当前连续区间的右边界，则合并区间
+        if (segs[i].x &lt;= r) 
+            r = max(r, segs[i].y);
+        else &#123;
+            // 更新最长连续区间和最长间隔区间的结果
+            res1 = max(res1, r - l);
+            res2 = max(res2, segs[i].x - r);
+            // 更新到下一组区间，更新左右边界
+            l = segs[i].x, r = segs[i].y;
+        &#125;
+
+    // 更新最后一组区间的结果
+    res1 = max(res1, r - l);
+
+    // 输出最长连续区间和最长间隔区间的结果
+    printf(&quot;%d %d\n&quot;, res1, res2);
+
+    return 0;
+&#125;
+</code></pre><h2 id="递归"><a class="anchor" href="#递归">#</a> 递归</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3B1bmNoX3RoZV9jbG9jay8zNzgyLw==">AcWing 1360. 有序分数</span></p><ul><li><p>暴力搜索：n^2 枚举一遍，判断是不是互质，若互质，存入 pair 数组，然后排序，输出即可</p><ul><li><strong>pair 数组需要自定义顺序排序规则</strong>： <code>a.y / a.x</code> &lt; <code>b.y / b.x</code> ，通分得 <code>a.y * b.x</code> &lt; <code>a.x * b.y</code></li></ul></li><li><p>求最大公约数</p><pre><code class="language-c++">int gcd(int a, int b) &#123;
+    // 辗转相除法
+    return b ? gcd(b, a % b) : a;
+&#125;
+</code></pre></li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+#define x first
+#define y second
+
+using namespace std;
+
+const int N = 180;
+
+typedef pair&lt;int, int&gt; PII;
+
+int n;
+PII q[N * N];
+
+// 判断互质
+int gcd(int a, int b) &#123;
+    // 辗转相除法
+    return b ? gcd(b, a % b) : a;
+&#125;
+
+bool cmp(PII a, PII b) &#123;
+    return a.y * b.x &lt; a.x * b.y;
+&#125;
+
+int main()
+&#123;
+    scanf(&quot;%d&quot;,&amp;n);
+    
+    int cnt = 0;
+    // 分母
+    for (int i = 0; i &lt;= n; i ++ )
+        // 分子
+        for (int j = 0; j &lt;= i; j ++ )
+            if (gcd(i, j) == 1)
+                q[cnt ++] = &#123;i, j&#125;;
+                
+    sort(q, q + cnt, cmp);
+    
+    // &#123;i, j&#125; =&gt; &#123;分母，分子&#125; &lt;= &#123;x, y&#125;
+    for (int i = 0; i &lt; cnt; i ++ )
+        printf(&quot;%d/%d\n&quot;, q[i].y, q[i].x);
+    
+    return 0;
+&#125;
+</code></pre><ul><li><code>Stern-Brocot Tree</code> 算法：可以在 0~1 中找出所有的有理数</li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int n;
+
+void dfs(int a, int b, int c, int d) &#123;
+    if (b + d &gt; n) return;
+    // 左半边递归，分子分母相加
+    dfs(a, b, a + c, b + d);
+    printf(&quot;%d/%d\n&quot;, a + c, b + d);
+    // 右半边递归，分子分母相加
+    dfs(a + c, b + d, c, d);
+&#125;
+
+int main()
+&#123;
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cin &gt;&gt; n;
+    
+    puts(&quot;0/1&quot;);
+    dfs(0, 1, 1, 1);
+    puts(&quot;1/1&quot;);
+    
+    return 0;
+&#125;
+</code></pre><h2 id="dfs"><a class="anchor" href="#dfs">#</a> DFS</h2><ul><li>转换为计算两个由 <code>X</code> 组成的矩阵中所有 <code>X</code> 之间的<strong>最小曼哈顿距离（两个点横坐标差的绝对值和纵坐标差的绝对值的和）</strong></li><li>矩阵 N 行 M 列，矩阵大小 <code>50*50=2500</code> ，遍历面积的最大格式为 <code>c(2500-c)</code> ，根据均值不等式，得知在中点处最大，数据量大小为 100 万左右</li><li>核心思路：<ul><li>枚举，找到一个 <code>X</code> 时，用 <code>DFS/BFS/并查集</code> 搜索出整个连通块（DFS 代码短；BFS 第一次求得为最短路径，栈空间较小）</li></ul></li><li><code>vector&lt;PII&gt;&amp; q</code> 通过引用允许函数直接操作调用者提供的变量，而不是对变量进行复制，这样可以减少内存消耗和提高效率</li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#define x first
+#define y second
+
+using namespace std;
+
+typedef pair&lt;int, int&gt; PII;
+const int N = 55;
+
+int n, m;
+char g[N][N];// 牛皮矩阵
+vector&lt;PII&gt; points[2];// 保存点坐标&#123;[x1, x2, ...], [y1, y2, ...]&#125;
+// 4方向偏移量
+int dx[4] = &#123;-1, 0, 1, 0&#125;, dy[4] = &#123;0, 1, 0, -1&#125;;
+
+void dfs(int a, int b, vector&lt;PII&gt;&amp; q) &#123;
+    // 入栈
+    q.push_back(&#123;a, b&#125;);
+    g[a][b] = '.';
+    
+    for (int i = 0; i &lt; 4; i ++ ) &#123;
+        // 更新纵坐标和横坐标
+        int x = a + dx[i], y = b + dy[i];
+        // 不越界继续搜索，复原出斑点的位置
+        if (x &gt;= 0 &amp;&amp; x &lt; n &amp;&amp; y &gt;= 0 &amp;&amp; y &lt; m &amp;&amp; g[x][y] == 'X')
+            dfs(x, y, q);
+    &#125;
+&#125;
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+    for (int i = 0; i &lt; n; i ++ ) scanf(&quot;%s&quot;, g[i]);
+    
+    // 连通块的个数
+    int k = 0;
+    for (int i = 0; i &lt; n; i ++ )
+        for (int j = 0; j &lt; m; j ++ )
+            if (g[i][j] == 'X')
+                dfs(i, j, points[k ++ ]);
+    // 最远的曼哈顿距离需要&gt;100，这里设置为110
+    int res = 110;
+    // 遍历获取斑点的坐标值
+    for (auto&amp; a: points[0])
+        for (auto&amp; b: points[1])
+            res = min(res, abs(a.x - b.x) + abs(a.y - b.y)); // 更新最小曼哈顿距离
+            
+    printf(&quot;%d\n&quot;, res - 1);
+    return 0;
+&#125;
+</code></pre><h2 id="剪枝"><a class="anchor" href="#剪枝">#</a> 剪枝</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3Byb2JsZW0vY29udGVudC85NzY3Lw==">AcWing 167. 木棒</span></p><ul><li>暴搜：从小到大枚举答案的长度 <code>len</code> ，依次拼每根长度为 <code>len</code> 的木棍</li><li>剪枝优化<ul><li>优化搜索顺序：<strong>从大到小</strong>去枚举，减少了后续木棍的选择，进而减少了搜索树的节点数目</li><li>排除等效冗余：组合型枚举，每一根长木棍的内部的小木棍编号递增</li><li>可行性剪枝<ul><li>失败后，<strong>跳过</strong>与当前木棍长度相等的其他木棍</li><li>某个新长木棍中，尝试接入的第一根木棍的递归分支返回失败的话，则<strong>回溯</strong>更换</li><li>若当前小木棍接入的是最后一根符合条件的长木棍，剩余木棍无解，则<strong>回溯</strong>更换</li></ul></li></ul></li></ul><pre><code class="language-c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 60;
+
+int n;
+int stick[N]; // 每根木棍的长度
+bool st[N]; // 木棍是否被使用
+int sum, len; // sum当前木棍的总长度；len枚举的长度
+
+// u当前枚举到的长木棍;cur当前长木棍的长度;start当前长木棍在拼的小木棍的下标
+bool dfs(int u, int cur, int start) &#123;
+    // 所有的小木棍都拼成了长木棍
+    if (u * len == sum) return true;
+    // 长木棍已经拼接完成，搜索下一根
+    if (cur == len) return dfs(u + 1, 0, 0);
+    
+    for (int i = start; i &lt; n; i ++ ) &#123;
+        // 当前小木棍被用过了
+        if (st[i]) continue;
+        // 判断当前木棍能否使用
+        if (cur + stick[i] &lt;= len) &#123;
+            st[i] = true;
+            if (dfs(u, cur + stick[i], i + 1)) return true;
+            st[i] = false;
+        &#125;
+        
+        // 当前是一根新长木棍，剪枝2和3
+        if (!cur || cur + stick[i] == len) return false;
+        
+        // 剪枝1，从i+1开始，长度与i相等的跳过
+        int j = i +  1;
+        while (j &lt; n &amp;&amp; stick[j] == stick[i]) j++;
+        i = j - 1;
+    &#125;
+    return false;
+&#125;
+
+int main()
+&#123;
+    while (cin &gt;&gt; n, n) &#123;
+        // 清空
+        sum = len = 0;
+        // 依次读入每根木棍
+        for (int i = 0; i &lt; n; i ++ ) &#123;
+            cin &gt;&gt; stick[i];
+            sum += stick[i];
+            len = max(len, stick[i]); // 最小的长度要大于等于最短木棍的长度
+        &#125;
+        // 从大到小排序
+        sort(stick, stick + n, greater&lt;int&gt;());
+    
+        // 清空
+        memset(st, 0, sizeof st);
+        while (true) &#123;
+            // 整除且能够搜索到方案
+            if (sum % len == 0 &amp;&amp; dfs(0, 0, 0)) &#123;
+                // 输出枚举长度
+                cout &lt;&lt; len &lt;&lt; endl;
+                break;
+            &#125;
+            len ++ ;
+        &#125;
+    &#125;
+    return 0;
+&#125;
+</code></pre><h2 id="bfs"><a class="anchor" href="#bfs">#</a> BFS</h2><h2 id="flood-fill"><a class="anchor" href="#flood-fill">#</a> Flood Fill</h2><h2 id="并查集"><a class="anchor" href="#并查集">#</a> 并查集</h2><h2 id="哈希表"><a class="anchor" href="#哈希表">#</a> 哈希表</h2><h2 id="单调队列"><a class="anchor" href="#单调队列">#</a> 单调队列</h2><h2 id="树状数组"><a class="anchor" href="#树状数组">#</a> 树状数组</h2><h2 id="状态压缩dp"><a class="anchor" href="#状态压缩dp">#</a> 状态压缩 DP</h2><h2 id="线性dp"><a class="anchor" href="#线性dp">#</a> 线性 DP</h2><h2 id="背包问题"><a class="anchor" href="#背包问题">#</a> 背包问题</h2><h2 id="最长公共子串"><a class="anchor" href="#最长公共子串">#</a> 最长公共子串</h2><h2 id="区间dp"><a class="anchor" href="#区间dp">#</a> 区间 DP</h2><h2 id="树形dp"><a class="anchor" href="#树形dp">#</a> 树形 DP</h2><h2 id="快速幂"><a class="anchor" href="#快速幂">#</a> 快速幂</h2><h2 id="最大公约数"><a class="anchor" href="#最大公约数">#</a> 最大公约数</h2><h2 id="分解质因数"><a class="anchor" href="#分解质因数">#</a> 分解质因数</h2><h2 id="矩阵乘法"><a class="anchor" href="#矩阵乘法">#</a> 矩阵乘法</h2><h2 id="组合计数"><a class="anchor" href="#组合计数">#</a> 组合计数</h2><h2 id="数学期望"><a class="anchor" href="#数学期望">#</a> 数学期望</h2><h2 id="欧拉函数"><a class="anchor" href="#欧拉函数">#</a> 欧拉函数</h2><h2 id="最短路"><a class="anchor" href="#最短路">#</a> 最短路</h2><h2 id="贪心"><a class="anchor" href="#贪心">#</a> 贪心</h2><h2 id="括号序列"><a class="anchor" href="#括号序列">#</a> 括号序列</h2><h2 id="a算法"><a class="anchor" href="#a算法">#</a> A * 算法</h2><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vRnJhbmtDaGVuODMxWC9wLzEwMzU4MTIwLmh0bWw=">A* 算法详解</span></p><h1 id="真题复现"><a class="anchor" href="#真题复现">#</a> 真题复现</h1><h2 id="2023"><a class="anchor" href="#2023">#</a> 2023</h2><h2 id="2022"><a class="anchor" href="#2022">#</a> 2022</h2><div class="tags"><a href="/tags/Algorithm/" rel="tag"><i class="ic i-tag"></i> Algorithm</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2024-03-17 00:20:22" itemprop="dateModified" datetime="2024-03-17T00:20:22+08:00">2024-03-17</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.png" alt="Xh1Xxhg 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="Xh1Xxhg 支付宝"><p>支付宝</p></div><div><img data-src="/images/paypal.png" alt="Xh1Xxhg 贝宝"><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>Xh1Xxhg <i class="ic i-at"><em>@</em></i>十年磨一剑</li><li class="link"><strong>本文链接：</strong> <a href="http://yoursite.com/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/" title="Acwing 每日一题">http://yoursite.com/Algorithm/题解记录_蓝桥杯/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/As%20Developers/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="SpringBoot3+Vue2后台管理系统"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> 开发</span><h3>SpringBoot3+Vue2后台管理系统</h3></a></div><div class="item right"><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="题解记录_acwing"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> 算法</span><h3>题解记录_acwing</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">每日一题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E5%B7%AE%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">二分 &amp; 差分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%BC%80%E5%92%8C"><span class="toc-number">1.2.</span> <span class="toc-text">前缀和</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%AE%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">差分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E6%8C%87%E9%92%88"><span class="toc-number">1.4.</span> <span class="toc-text">双指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">1.5.</span> <span class="toc-text">归并排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%BD%92%E5%B9%B6"><span class="toc-number">1.6.</span> <span class="toc-text">多路归并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A1%E7%8C%AE%E6%B3%95"><span class="toc-number">1.7.</span> <span class="toc-text">贡献法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E9%97%AE%E9%A2%98"><span class="toc-number">1.8.</span> <span class="toc-text">日期问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6"><span class="toc-number">1.9.</span> <span class="toc-text">区间合并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%92%E5%BD%92"><span class="toc-number">1.10.</span> <span class="toc-text">递归</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dfs"><span class="toc-number">1.11.</span> <span class="toc-text">DFS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%AA%E6%9E%9D"><span class="toc-number">1.12.</span> <span class="toc-text">剪枝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bfs"><span class="toc-number">1.13.</span> <span class="toc-text">BFS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flood-fill"><span class="toc-number">1.14.</span> <span class="toc-text">Flood Fill</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E6%9F%A5%E9%9B%86"><span class="toc-number">1.15.</span> <span class="toc-text">并查集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-number">1.16.</span> <span class="toc-text">哈希表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97"><span class="toc-number">1.17.</span> <span class="toc-text">单调队列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84"><span class="toc-number">1.18.</span> <span class="toc-text">树状数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9dp"><span class="toc-number">1.19.</span> <span class="toc-text">状态压缩 DP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7dp"><span class="toc-number">1.20.</span> <span class="toc-text">线性 DP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98"><span class="toc-number">1.21.</span> <span class="toc-text">背包问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E4%B8%B2"><span class="toc-number">1.22.</span> <span class="toc-text">最长公共子串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4dp"><span class="toc-number">1.23.</span> <span class="toc-text">区间 DP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%91%E5%BD%A2dp"><span class="toc-number">1.24.</span> <span class="toc-text">树形 DP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%B9%82"><span class="toc-number">1.25.</span> <span class="toc-text">快速幂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0"><span class="toc-number">1.26.</span> <span class="toc-text">最大公约数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E8%A7%A3%E8%B4%A8%E5%9B%A0%E6%95%B0"><span class="toc-number">1.27.</span> <span class="toc-text">分解质因数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95"><span class="toc-number">1.28.</span> <span class="toc-text">矩阵乘法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0"><span class="toc-number">1.29.</span> <span class="toc-text">组合计数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%9B"><span class="toc-number">1.30.</span> <span class="toc-text">数学期望</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0"><span class="toc-number">1.31.</span> <span class="toc-text">欧拉函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF"><span class="toc-number">1.32.</span> <span class="toc-text">最短路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83"><span class="toc-number">1.33.</span> <span class="toc-text">贪心</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97"><span class="toc-number">1.34.</span> <span class="toc-text">括号序列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#a%E7%AE%97%E6%B3%95"><span class="toc-number">1.35.</span> <span class="toc-text">A * 算法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9C%9F%E9%A2%98%E5%A4%8D%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text">真题复现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023"><span class="toc-number">2.1.</span> <span class="toc-text">2023</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2022"><span class="toc-number">2.2.</span> <span class="toc-text">2022</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" rel="bookmark" title="c++常用函数">c++常用函数</a></li><li><a href="/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" rel="bookmark" title="c++语法基础">c++语法基础</a></li><li><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" rel="bookmark" title="算法知识归纳">算法知识归纳</a></li><li><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" rel="bookmark" title="题解记录_acwing">题解记录_acwing</a></li><li class="active"><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/" rel="bookmark" title="Acwing每日一题">Acwing每日一题</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="Xh1Xxhg" data-src="/images/avatar.jpg"><p class="name" itemprop="name">Xh1Xxhg</p><div class="description" itemprop="description">My 网安之路</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">8</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">3</span> <span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">3</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL1hoMVh4aGc=" title="https:&#x2F;&#x2F;github.com&#x2F;Xh1Xxhg"><i class="ic i-github"></i></span> <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9oeGgxX2VtYWls" title="https:&#x2F;&#x2F;twitter.com&#x2F;hxh1_email"><i class="ic i-twitter"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly95LnFxLmNvbS9uL3J5cXEvcGxheWxpc3QvMzY1MDEyNzIxMQ==" title="https:&#x2F;&#x2F;y.qq.com&#x2F;n&#x2F;ryqq&#x2F;playlist&#x2F;3650127211"><i class="ic i-cloud-music"></i></span> <a href="/hxh1_email@163.com" title="hxh1_email@163.com" class="item email"><i class="ic i-envelope"></i></a></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/As%20Developers/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" title="题解记录_acwing">题解记录_acwing</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E5%BC%80%E5%8F%91/" title="分类于 开发">开发</a></div><span><a href="/As%20Developers/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="SpringBoot3+Vue2后台管理系统">SpringBoot3+Vue2后台管理系统</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/" title="Acwing每日一题">Acwing每日一题</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/CTF/" title="分类于 CTF">CTF</a></div><span><a href="/CTF/Misc/" title="CTF-MISC总结">CTF-MISC总结</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E5%BC%80%E5%8F%91/" title="分类于 开发">开发</a></div><span><a href="/As%20Developers/Hexo+Shoka%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="Github Pages+Hexo搭建个人Blog">Github Pages+Hexo搭建个人Blog</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" title="c++常用函数">c++常用函数</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" title="算法知识归纳">算法知识归纳</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" title="c++语法基础">c++语法基础</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; <span itemprop="copyrightYear">2024</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">Xh1Xxhg @ Xh1Xxhg's Home</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">128k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">1:57</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"Algorithm/题解记录_蓝桥杯/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script></body></html><!-- rebuild by hrmmi -->

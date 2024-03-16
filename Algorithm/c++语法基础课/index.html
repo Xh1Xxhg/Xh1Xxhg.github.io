@@ -1,0 +1,345 @@
+<!-- build time:Sun Mar 17 2024 00:25:59 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="十年磨一剑" href="http://yoursite.com/rss.xml"><link rel="alternate" type="application/atom+xml" title="十年磨一剑" href="http://yoursite.com/atom.xml"><link rel="alternate" type="application/json" title="十年磨一剑" href="http://yoursite.com/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><meta name="keywords" content="Algorithm"><link rel="canonical" href="http://yoursite.com/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/"><title>c++ 语法基础 - 算法 | Xh1Xxhg's Home = 十年磨一剑 = Go For 全栈</title><meta name="generator" content="Hexo 5.4.2"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">c++ 语法基础</h1><div class="meta"><span class="item" title="创建时间：2024-03-16 23:29:08"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2024-03-16T23:29:08+08:00">2024-03-16</time> </span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">本文字数</span> <span>13k</span> <span class="text">字</span> </span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">阅读时长</span> <span>12 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Xh1Xxhg's Home</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="item" rel="index" title="分类于 算法"><span itemprop="name">算法</span></a><meta itemprop="position" content="1"></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://yoursite.com/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="Xh1Xxhg"><meta itemprop="description" content="Go For 全栈, My 网安之路"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="十年磨一剑"></span><div class="body md" itemprop="articleBody"><h1 id="简单顺序结构"><a class="anchor" href="#简单顺序结构">#</a> 简单顺序结构</h1><h2 id="main"><a class="anchor" href="#main">#</a> main( )</h2><p>最新版的 c++<strong> 不允许</strong>使用 void main ( )</p><h2 id="printf格式"><a class="anchor" href="#printf格式">#</a> printf 格式</h2><pre><code class="language-c++">%05d    宽度为5，左端自动补4个0
+%-5d    宽度为5，右端自动补空格
+%5.1f   保留小数点一位，宽度为5
+</code></pre><h1 id="循环"><a class="anchor" href="#循环">#</a> 循环</h1><h2 id="增强for循环"><a class="anchor" href="#增强for循环">#</a> 增强 for 循环</h2><p>范围遍历</p><pre><code class="language-c++">string s = &quot;HELLO WORLD&quot;;
+for(变量类型  新的遍历变量名 ： 被遍历的变量)
+for(char c : s) cout &lt;&lt; c &lt;&lt; endl;
+//取地址改变字符串内容
+for(char &amp;c : s) c = 'a';
+//auto类型
+//自动类型推导，但是必须初始化
+for(auto c : s)//用于类型比较长的时候
+</code></pre><h1 id="数组"><a class="anchor" href="#数组">#</a> 数组</h1><h2 id="分配内存"><a class="anchor" href="#分配内存">#</a> 分配内存</h2><p>指针数组初始化需要提前分配内存，并置 0，<strong>calloc</strong></p><p>一般数组（已经设置数组边界值）已经分配好内存，只需置 0，<strong>memset</strong></p><h2 id="获取数组长度"><a class="anchor" href="#获取数组长度">#</a> 获取数组长度</h2><ul><li><p>字符串数组长度：strlen ( )</p></li><li><p>万能方法：</p><p>sizeof (a) /sizeof (a [0]) —— 使用 sizeof 关键字</p><p>注意：因为字符串结尾处还有一个‘ \n ’字符，所以使用该方法时会比真实长度大了 1，即为 strlen ( ) + 1</p></li></ul><h2 id="定义变量的默认值"><a class="anchor" href="#定义变量的默认值">#</a> 定义变量的默认值</h2><pre><code class="language-c++">int n;//默认值为0
+</code></pre><h1 id="字符串"><a class="anchor" href="#字符串">#</a> 字符串</h1><h2 id="用地址调用数组元素"><a class="anchor" href="#用地址调用数组元素">#</a> 用地址调用数组元素</h2><pre><code class="language-c++">*(a+k);/*调用数组第k+1的元素*/
+</code></pre><h2 id="ascii码值"><a class="anchor" href="#ascii码值">#</a> ASCII 码值</h2><p>每个常用字符都对应一个 - 128~127 的数字</p><p>空格 &quot; &quot; 是 32</p><p><code>’0’-‘9’是48-57</code></p><p><code>’A’-‘Z’ 是65~90</code></p><p><code>’a’-‘z’是97-122</code></p><p>字符可以<strong>参与运算</strong>，需要用 **' 单引号 '<strong>，运算时会将其当做</strong>整数 **</p><pre><code class="language-c++">'1' != 1
+</code></pre><h2 id="字符数组"><a class="anchor" href="#字符数组">#</a> 字符数组</h2><p>字符数组的长度至少要比字符串的长度<strong>多 1</strong> (必须要有一个空间存放 '\0')</p><p>字符串就是字符数组加上<strong>结束符’\0’</strong></p><p>Difference：</p><pre><code class="language-c++">/*单个字符用单引号'', 字符串用双引号&quot;&quot;*/
+char a[] = &#123;'C', '+', '+'&#125;;//列表初始化，没有空字符
+char a[] = &#123;'C', '+', '+', '\0'&#125;;//列表初始化，含有空字符
+char a[] = &quot;C++&quot;;//列表初始化，自动添加空字符'\0'
+</code></pre><h2 id="字符串输入"><a class="anchor" href="#字符串输入">#</a> 字符串输入</h2><h3 id="scanf"><a class="anchor" href="#scanf">#</a> scanf</h3><p><strong>过滤空格</strong></p><p>% s 格式的输入不需要加上 &amp;，因为<strong>字符串的数组名</strong>就是指针，指向首地址（！仅限字符串数组！）</p><p>遇到空格结束，不会过滤回车</p><pre><code class="language-c++">//从数组下标唯一1开始输入,输出类似
+scanf(&quot;%s&quot;, s + 1);
+cin &gt;&gt; s + 1;
+//字符串用空格或回车隔开即可
+scanf(&quot;%s%s&quot;, s1, s2);
+//过滤回车
+scanf(&quot;\n%s&quot;,s);
+</code></pre><h3 id="cin"><a class="anchor" href="#cin">#</a> cin</h3><p><strong>过滤空格</strong></p><p>cin &gt;&gt; 字符串首地址，遇到空格或回车会停止，只能输入没有空格的字符串</p><h3 id="cingetline"><a class="anchor" href="#cingetline">#</a> cin.getline</h3><p><strong>可读空格，可以读取一整行</strong></p><pre><code class="language-c++">两个头文件
+&lt;string&gt;
+&lt;iostream&gt;
+</code></pre><p>cin.getline(s, 100);</p><p>cin.getline (字符串首地址，最多读入长度)；</p><p>遇到 ** 回车 '\r'** 结束，可以有空格</p><h3 id="fgets容易出错"><a class="anchor" href="#fgets容易出错">#</a> fgets（容易出错）</h3><p><strong>可读空格，可以读取一整行</strong></p><pre><code class="language-c++">char s[100];
+//fgets(s, 100, stdin)
+//fgets(字符串首地址，最多读入字符数，读入的文件名（一般为stdin）)
+</code></pre><ul><li><p>该函数从 <code>stream</code> 所指的文件中读取以 <code>'\n'</code> 结尾的一行（包括 <code>'\n'</code> 在内）存到缓冲区 <code>s</code> 中，并且在该行末尾添加一个 <code>'\0'</code> 组成完整的字符串。</p></li><li><p><strong><code>fgets()</code> 函数的最大读取大小是其 “ <code>第二个参数减1</code> ”，这是由于字符串是以 <code>’\0’</code> 为结束符的</strong></p></li><li><p><strong>输入回车时会读入 '\n' ，输入 <code>n</code> 个字符按下回车输入， <code>fgets()</code> 存储进第一个参数指定内存地址的是 <code>n+2</code> 个字节</strong></p></li></ul><h2 id="字符串输出"><a class="anchor" href="#字符串输出">#</a> 字符串输出</h2><h3 id="puts"><a class="anchor" href="#puts">#</a> puts</h3><p>puts (字符串数组名)；</p><p><code>puts输出自带有换行</code></p><h3 id="printf"><a class="anchor" href="#printf">#</a> printf</h3><p>printf(&quot;%s&quot;, s);</p><h2 id="常用操作"><a class="anchor" href="#常用操作">#</a> 常用操作</h2><pre><code class="language-c++">头文件：&lt;cstring&gt;
+</code></pre><h3 id="strlen"><a class="anchor" href="#strlen">#</a> strlen()</h3><p>strlen (str)，求字符串的长度</p><p><strong>一般提前用新变量保存好字符串的长度再进入循环</strong></p><h3 id="strcmp"><a class="anchor" href="#strcmp">#</a> strcmp()</h3><p>strcmp (a, b)，比较两个字符串的大小，按照<strong>字典序</strong>方式比较</p><p>字典序 (按照 ASCII 码)：abc &lt; adbe</p><p><code>a &lt; b 返回-1</code></p><p><code>a == b 返回0</code></p><p><code>a &gt; b返回1</code></p><h3 id="strcpy"><a class="anchor" href="#strcpy">#</a> strcpy()</h3><p>strcpy (a, b)，将字符串 b 复制给从 a 开始的字符数组</p><h2 id="思想统计字符中字符出现的次数"><a class="anchor" href="#思想统计字符中字符出现的次数">#</a> 思想：统计字符中字符出现的次数</h2><p>开辟新的长度为 26 的数组，统计每个字幕出现的次数</p><pre><code class="language-c++">for(int i = 0; str[i]; i ++) //str[i]至'\0'结束，循环也就停止  
+    cnt[str[i] - 'a'] ++;
+</code></pre><h2 id="思想小写字母变为下一位"><a class="anchor" href="#思想小写字母变为下一位">#</a> 思想：小写字母变为下一位</h2><pre><code class="language-c++">//c为增强for循环中设置的变量
+c = (c - 'a' + 1) % 26 + 'a';
+</code></pre><h2 id="标准库类型string80用string处理常用"><a class="anchor" href="#标准库类型string80用string处理常用">#</a> 标准库类型 String (80% 用 string 处理，常用)</h2><h3 id="头文件"><a class="anchor" href="#头文件">#</a> 头文件</h3><pre><code class="language-c++">//头文件
+#include&lt;string&gt;
+</code></pre><h3 id="初始化定义"><a class="anchor" href="#初始化定义">#</a> 初始化定义</h3><pre><code class="language-c++">string s1; //默认的空字符串
+string s2 = s1;//s2等于s1
+string s3 = &quot;jjj&quot;;
+string s4(10, 'c');//s4为cccccccccc
+</code></pre><h3 id="输入"><a class="anchor" href="#输入">#</a> 输入</h3><p><strong>scanf 不能用，会报错</strong></p><h4 id="cin-2"><a class="anchor" href="#cin-2">#</a> cin</h4><p><strong>过滤空格</strong></p><p>cin &gt;&gt; s;</p><h4 id="getline"><a class="anchor" href="#getline">#</a> getline</h4><p><strong>可读空格，可以读取一整行</strong></p><p>getline(cin, s);</p><h3 id="输出"><a class="anchor" href="#输出">#</a> 输出</h3><h4 id="cout"><a class="anchor" href="#cout">#</a> cout</h4><p>cout &lt;&lt; s;</p><h4 id="printf耗时更少"><a class="anchor" href="#printf耗时更少">#</a> printf (耗时更少)</h4><p><code>printf(&quot;%s\n&quot;, s.c_str());</code></p><p>c_str () 调用成员函数：返回字符数组的首地址</p><h4 id="puts-2"><a class="anchor" href="#puts-2">#</a> puts</h4><p>puts(s1.c_str());</p><p>c_str () 调用函数返回字符数组的首地址</p><h3 id="empty"><a class="anchor" href="#empty">#</a> empty</h3><p>s.empty( )</p><p>返回布尔值，s 为空返回 1，非空返回 0</p><h3 id="size"><a class="anchor" href="#size">#</a> size</h3><p>s.size( )</p><p>返回无符号整型的字符串长度</p><p>与 strlen () 遍历一次求长的 o ( n) 时间复杂度不同，该函数时间复杂度为 o ( 1 )</p><h3 id="string比较"><a class="anchor" href="#string比较">#</a> string 比较</h3><p>支持 &gt; &lt; &gt;= &lt;= == != 等所有比较操作，按字典序进行比较。</p><h3 id="赋值"><a class="anchor" href="#赋值">#</a> 赋值</h3><pre><code class="language-c++">s1 = s2;
+</code></pre><p>给 s1 赋值为 s2 的值</p><h3 id="相加"><a class="anchor" href="#相加">#</a> 相加</h3><p>必须确保每个加法运算符的两侧的运算对象<strong>至少有一个是 string</strong></p><p>不能都为字符或字符串类型</p><pre><code class="language-c++">s3 = s1 + s2;
+s3 += s1;
+/*可以加上字符或字符串*/
+s3 = s3 + &quot;Hello&quot; + 'H';
+</code></pre><h3 id="处理字符"><a class="anchor" href="#处理字符">#</a> 处理字符</h3><ul><li>当成字符数组，例如可以 for 循环使用 s [i]</li><li>使用增强 for 循环</li></ul><h1 id="函数"><a class="anchor" href="#函数">#</a> 函数</h1><h2 id="组成"><a class="anchor" href="#组成">#</a> 组成</h2><ul><li><p>返回类型 (必须写)、函数名字、由 0 个或多个形参组成的列表以及函数体</p></li><li><p><strong>return 语句</strong>负责结束函数并返回一个值。不写会返回一个随机值。</p></li></ul><h2 id="调用"><a class="anchor" href="#调用">#</a> 调用</h2><ul><li>用实参初始化函数对应的形参</li><li>将控制权转移给被调用函数。此时，主调函数的执行被暂时中断，被调函数开始执行。</li></ul><h2 id="声明和定义"><a class="anchor" href="#声明和定义">#</a> 声明和定义</h2><p>声明：没有函数体</p><p>定义：必须写函数体</p><h2 id="形参列表"><a class="anchor" href="#形参列表">#</a> 形参列表</h2><p>函数的形参列表可以为空，但是不能省略。</p><pre><code class="language-c++">void f1() &#123;/* …. */&#125;        // 隐式地定义空形参列表
+void f2(void) &#123;/* … */&#125;      // 显式地定义空形参列表
+</code></pre><p>形参列表中的形参通常用逗号隔开，其中每个形参都是含有一个声明符的声明。即使两个形参的类型一样，也必须把两个类型都写出来：</p><pre><code class="language-c++">int f3(int v1, v2) &#123;/* … */&#125;       // 错误
+int f4(int v1, int v2) &#123;/* … */&#125;    // 正确
+</code></pre><h2 id="返回类型"><a class="anchor" href="#返回类型">#</a> 返回类型</h2><ul><li>大多数类型都可作为返回类型</li><li>特殊：void—— 表示函数不返回任何值、</li><li>函数的返回类型不能是数组类型或函数类型，但可以是<strong>指向数组或者函数的指针</strong>。</li></ul><h2 id="全局局部2静态变量"><a class="anchor" href="#全局局部2静态变量">#</a> 全局 / 局部 / 2 静态变量</h2><ul><li>局部变量只可以在函数内部使用（重名时优先选择）</li><li>全局变量可以在所有函数内使用</li><li>static 静态，可以设置一个只在该函数内用的全局变量（节省空间，存入堆中，非栈）</li></ul><h2 id="参数传递"><a class="anchor" href="#参数传递">#</a> 参数传递</h2><h3 id="传值参数int-a"><a class="anchor" href="#传值参数int-a">#</a> 传值参数（int a）</h3><ul><li><p>初始化一个非引用类型的变量时，函数中设定的初始值被拷贝给主函数中的变量。</p></li><li><p>在函数中对变量的改动不会影响主函数中的初始值。</p></li></ul><h3 id="传引用参数int-a"><a class="anchor" href="#传引用参数int-a">#</a> 传引用参数（int &amp;a）</h3><ul><li>当函数的形参为引用类型时，函数中对形参的修改会影响主函数中实参的值。</li><li>使用引用的作用：避免拷贝、让函数返回额外信息。</li></ul><h3 id="重载"><a class="anchor" href="#重载">#</a> 重载</h3><p>函数名一样的情况无大碍，还取决于<strong>参数类型</strong></p><h2 id="数组形参"><a class="anchor" href="#数组形参">#</a> 数组形参</h2><p><strong>传引用参数</strong></p><ul><li><p>一维数组形参的写法：</p><pre><code class="language-c++">void print(int *a) &#123;/* … */&#125;
+void print(int a[]) &#123;/* … */&#125;
+void print(int a[10]) &#123;/* … */&#125;
+</code></pre></li><li><p>多维数组形参的写法：</p><p>多维数组中，除了<strong>第一维</strong>之外，其余维度的大小必须指定</p><p>（c++ 中多维数组会被转化为一维数组的指针样式进行保存）</p><pre><code class="language-c++">void print(int (*a)[10]) &#123;/* … */&#125;
+void print(int a[][10]) &#123;/* … */&#125;
+</code></pre></li></ul><h2 id="返回类型和return语句"><a class="anchor" href="#返回类型和return语句">#</a> 返回类型和 return 语句</h2><h3 id="两种形式"><a class="anchor" href="#两种形式">#</a> 两种形式</h3><pre><code class="language-c++">return;
+return expression;
+</code></pre><h3 id="返回类型和return语句-2"><a class="anchor" href="#返回类型和return语句-2">#</a> 返回类型和 return 语句</h3><p><strong>无返回值函数</strong></p><ul><li>没有返回值的 return 只能用在返回类型是 void 的函数中，该类函数也没必要写上 return</li><li>有点类似于我们用 break 语句退出循环。</li></ul><p><strong>有返回值的函数</strong></p><ul><li>返回类型不是 void，每条 return 都必须返回一个与函数类型相同的值</li></ul><h2 id="函数递归"><a class="anchor" href="#函数递归">#</a> 函数递归</h2><p>函数内部可以调用函数本身</p><h1 id="类结构体-指针引用"><a class="anchor" href="#类结构体-指针引用">#</a> 类 &amp; 结构体 指针 &amp; 引用</h1><h2 id="类"><a class="anchor" href="#类">#</a> 类</h2><p>类可以将变量、数组和函数完美地打包在一起</p><p><strong>复杂抽象，比较庞大</strong></p><ul><li><p>private</p><p>后面的内容是私有成员变量，在类的外部不能访问</p></li><li><p>public</p><p>后面的内容是公有成员变量，在类的外部可以访问</p></li></ul><pre><code class="language-c++">class Person &#123;
+    int age;//类默认为private
+    private:
+    	int age, height;
+    	double monney;
+    	string books[N];
+    public:
+    	int get_height()
+        &#123;
+            return height;
+        &#125;
+    public:
+    	string name;
+		void say()
+        &#123;
+            cout &lt;&lt; &quot;I'm&quot; &lt;&lt; endl;
+        &#125;
+    	int get_age()
+        &#123;
+            return age;
+        &#125;
+    	void add_money(double x)
+        &#123;
+            money += x;
+        &#125;
+&#125;Person1, Person2;
+int main()
+&#123;
+    Person c;
+    c.name = &quot;hxh&quot;;
+    c.age = 18;//错误！因为age是private类型的变量
+    c.add_money(10000);
+&#125;
+</code></pre><h2 id="结构体"><a class="anchor" href="#结构体">#</a> 结构体</h2><p><strong>比较短，存和数据相关的</strong></p><pre><code class="language-c++">struct Person &#123;
+	int age;//结构体默认是public
+&#125;;
+</code></pre><h2 id="内存空间分配方式"><a class="anchor" href="#内存空间分配方式">#</a> 内存空间分配方式</h2><p>程序的进程保存在堆栈中，保存形式为<strong>十六进制</strong></p><ul><li><p>动态数据区：</p><ul><li>局部变量存在<strong>栈</strong>里，未设定初值，每次分配的位置不一样，所以每次都不一样</li><li>向下增长，从上往下分配</li></ul></li><li><p>静态数据区：</p><ul><li>全局 / 静态变量存在<strong>堆</strong>里，设定初始值为 0</li><li>向上增长，从下往上分配</li></ul></li></ul><p><code>1 byte = 8 bit</code></p><h2 id="指针"><a class="anchor" href="#指针">#</a> 指针</h2><p>指针指向存放变量的值的地址。因此我们可以通过指针来修改变量的值。</p><pre><code class="language-c++">//找到变量地址，需要转化成指针类型
+char c = 'a';
+cout &lt;&lt; (void*)&amp;c &lt;&lt; endl;
+
+//将变量值赋给指针
+int* p = &amp;a;//(int*)类型的p的值是变量a的地址
+cout &lt;&lt; *p &lt;&lt; endl;//读取指针p指向的变量的值
+*p = a;//修改p指向的变量的值
+</code></pre><h2 id="区别注意点"><a class="anchor" href="#区别注意点">#</a> 区别 &amp; 注意点</h2><ul><li><p>不同点在于类默认是 private，结构体默认是 public。</p></li><li><p><strong>指针访问 -&gt;</strong></p></li><li><p>** 普通访问 **</p></li><li><p>new</p><pre><code class="language-c++">struct Node &#123;
+    int val;
+    Node* next;
+    /*构造函数初始值列表*/
+   // 结点类型(输入值) : 变量1(传值), 变量2(传值) &#123;&#125;
+    Node(int _val) : val(_val), next(nullptr) &#123;&#125;
+&#125;;
+int main()
+&#123;
+    //定义Node类型的变量，p保存的是变量地址
+    Node* p = new Node(1);
+    auto q = new Node(2);//auto自动设置，因为new Node()自动返回Node*类型
+    auto o = new Node(3);
+    //定义Node类型的变量，结点值是1
+    Node node = Node(1);
+&#125;
+</code></pre></li></ul><h2 id="数组特殊的指针"><a class="anchor" href="#数组特殊的指针">#</a> 数组 —— 特殊的指针</h2><pre><code class="language-c++">int a[5] = &#123;1, 2, 3, 4, 5&#125;;
+int *p = a;//p的值是数组a的地址
+</code></pre><h2 id="c的引用语法"><a class="anchor" href="#c的引用语法">#</a> C++ 的引用语法</h2><ul><li><p>指针指向一块内存，内部存储的内容是所指的内存的地址</p></li><li><p>引用是模块内存的别名，跟原来的变量实质上是同一个东西。</p></li><li><p>指针和引用都可以作为函数参数，改变实参的值。</p></li></ul><pre><code class="language-c++">//和指针类似，相当于给a取个别名
+int&amp; p = a;
+
+int a = 996;
+int *p = &amp;a; // p是指针, &amp;在此是求地址运算
+int &amp;r = a; // r是引用, &amp;在此起标识作用
+</code></pre><h2 id="单链表"><a class="anchor" href="#单链表">#</a> 单链表</h2><pre><code class="language-c++">#include&lt;iostream&gt;
+
+using namespace std;
+
+struct Node
+&#123;
+    int val;
+    Node* next;
+    
+    Node(int _val) : val(_val), next(nullptr) &#123;&#125;
+&#125;
+int main()
+&#123;
+    auto p = new Node(1);
+    auto q = new Node(2);
+    auto o = new Node(3);
+    
+    p-&gt;next = q;
+    q-&gt;next = o;
+    
+    Node* head = p;
+    /*添加结点*/
+    Node* u = new Node(4);
+    u-&gt;next = head;
+    head = u;
+    /*删除结点*/
+    head-&gt;next = head-&gt;next-&gt;next;
+    /*链表的遍历*/
+    for(Node* i = head; i; i = i-&gt;next)
+        cout &lt;&lt; i-&gt;val &lt;&lt; endl;
+   
+    return 0;
+&#125;
+</code></pre><h1 id="stl"><a class="anchor" href="#stl">#</a> STL</h1><p>STL 是提高 c++ 编写效率的一个利器。</p><h2 id="vector"><a class="anchor" href="#vector">#</a> vector</h2><p>vector 是<strong>变长数组</strong>，支持<strong>随机访问</strong>，<strong>不支持</strong>在任意位置 O (1) 插入。为了保证效率，元素的增删一般应该在末尾进行。</p><ul><li>利用倍增实现动态增长<ul><li>长度不够时进行 1/2 拷贝，n (1/2 + 1/4 + 1/8 + ....)，平均每次时间复杂度是 o (1)</li><li>定义的耗时比数组慢，使用的效率快</li></ul></li></ul><h3 id="声明"><a class="anchor" href="#声明">#</a> 声明</h3><pre><code class="language-c++">#include &lt;vector&gt; 	//头文件
+vector&lt;int&gt; a;		//相当于一个长度动态变化的int数组
+vector&lt;int&gt; b[233];	//相当于第一维长233，第二位长度动态变化的int数组
+    
+struct rec&#123;…&#125;;
+vector&lt;rec&gt; c;		//自定义的结构体类型也可以保存在vector中
+
+//二维数组
+vector&lt;vector&lt;int&gt;&gt; dp(m, vector&lt;int&gt;(n, 0));
+</code></pre><h3 id="size-2"><a class="anchor" href="#size-2">#</a> size( )</h3><ul><li>size 函数返回 vector 的实际长度（包含的元素个数）</li><li>时间复杂度都是 O (1)</li><li>所有的 STL 容器都支持这个方法，含义也相同</li></ul><pre><code class="language-c++">a.size();
+</code></pre><h3 id="empty-2"><a class="anchor" href="#empty-2">#</a> empty( )</h3><ul><li>empty 函数返回一个 bool 类型，表明 vector 是否为空</li><li>时间复杂度都是 O (1)</li><li>所有的 STL 容器都支持这两个方法，含义也相同</li></ul><pre><code class="language-c++">a.empty;
+</code></pre><h3 id="clear"><a class="anchor" href="#clear">#</a> clear</h3><ul><li>clear 函数把 vector 清空，只有 0 个元素</li></ul><pre><code class="language-c++">a.clear();
+</code></pre><h3 id="迭代器"><a class="anchor" href="#迭代器">#</a> 迭代器</h3><p>迭代器就像 STL 容器的 “指针”，可以用星号 “*****”<strong> 操作符解除引用</strong>。</p><pre><code class="language-c++">//一个保存int的vector的迭代器声明方法为：
+//it保存a的首地址，
+vector&lt;int&gt;::iterator it = a.begin();
+</code></pre><h4 id="begin"><a class="anchor" href="#begin">#</a> begin( )</h4><pre><code class="language-c++">a.begin(); === &amp;a[0]
+*a.begin(); === a[0]
+</code></pre><h4 id="end"><a class="anchor" href="#end">#</a> end( )</h4><ul><li><p>左开右闭，[begin, end)</p></li><li><p>end 函数返回 vector 的尾部，即第 n 个元素再往后的 “边界 n + 1“。</p></li><li><p>*a.end () 与 a [n] 都是越界访问，其中 n=a.size ()，即容器长度</p></li></ul><h4 id="遍历方法"><a class="anchor" href="#遍历方法">#</a> 遍历方法</h4><ul><li><p>类似数组</p><pre><code class="language-c++">for(int i = 0; i &lt; a.size(); i++) cout &lt;&lt; a[i] &lt;&lt; ' ';
+//增强for循环
+for(int x : a) cout &lt;&lt; x &lt;&lt; ' ';
+</code></pre></li><li><p>迭代器遍历</p><pre><code class="language-c++">//可以用auto代替i的类型定义
+for(vector&lt;int&gt;::iterator i = a.begin(); i != a.end(); i++) cout &lt;&lt; *i &lt;&lt; ' ';
+</code></pre></li></ul><h4 id="front-back"><a class="anchor" href="#front-back">#</a> front / back</h4><ul><li><p>front 函数返回 vector 的第一个元素，等价于 * a.begin () 和 a [0]。</p></li><li><p>back 函数返回 vector 的最后一个元素，等价于 a [a.size () – 1]，a.end () 的前一个位置。</p></li></ul><h4 id="push_back-pop_back"><a class="anchor" href="#push_back-pop_back">#</a> push_back() / pop_back()</h4><ul><li><p>a.push_back (x) 把元素 x 插入到 vector a 的尾部。时间复杂度 o (1)</p></li><li><p>b.pop_back () 删除 vector a 的最后一个元素。时间复杂度 o (1)</p></li></ul><h2 id="queue"><a class="anchor" href="#queue">#</a> queue</h2><p>头文件 queue 主要包括循环队列 queue 和优先队列 priority_queue 两个容器。</p><p><strong>先进先出</strong>的顺序</p><h3 id="循环队列queue"><a class="anchor" href="#循环队列queue">#</a> 循环队列 queue</h3><h4 id="声明-2"><a class="anchor" href="#声明-2">#</a> 声明</h4><pre><code class="language-c++">#include&lt;queue&gt; 	//头文件
+queue&lt;int&gt; q;
+</code></pre><h4 id="操作"><a class="anchor" href="#操作">#</a> 操作</h4><pre><code class="language-c++">q.push(1);//队头插入一个元素
+q.pop();//弹出队尾元素
+q.front();//返回队头元素
+q.back();//返回队尾元素
+</code></pre><h3 id="优先队列priority_queue"><a class="anchor" href="#优先队列priority_queue">#</a> 优先队列 priority_queue</h3><h4 id="声明-3"><a class="anchor" href="#声明-3">#</a> 声明</h4><pre><code class="language-c++">#include&lt;queue&gt; 	//头文件
+priority_queue&lt;int&gt; q;		// 大根堆(优先返回大的数)
+priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; q;	// 小根堆(返回最小值)
+priority_queue&lt;pair&lt;int, int&gt;&gt;q;
+
+struct rec&#123;
+    int a,b;
+    //重载小于号
+	bool operator&lt; (const Rec&amp; t) const
+	&#123;
+		return a &lt; t.a;//降序出列，从小到大排序，从大到小出列
+        或者
+        return a &gt; t.a;//升序排列，从大到小排序，从小到大出列
+	&#125;;
+&#125;; 
+priority_queue&lt;rec&gt; q;//结构体rec中必须重载小于号函数
+</code></pre><h4 id="操作-2"><a class="anchor" href="#操作-2">#</a> 操作</h4><pre><code class="language-c++">a.push(1);//插入一个数，按顺序自动调整
+a.top();//取最大值
+a.pop();//删除最大值
+</code></pre><h4 id="清空队列"><a class="anchor" href="#清空队列">#</a> 清空队列</h4><pre><code class="language-c++">q = queue&lt;int&gt;();//重新初始化
+</code></pre><h2 id="stack"><a class="anchor" href="#stack">#</a> stack</h2><h3 id="声明-4"><a class="anchor" href="#声明-4">#</a> 声明</h3><pre><code class="language-c++">#include &lt;stack&gt;//头文件
+stack&lt;int&gt; stk;
+</code></pre><h3 id="操作-3"><a class="anchor" href="#操作-3">#</a> 操作</h3><pre><code class="language-c++">int x;
+stk.push();//向栈顶插入
+stk.top();//返回栈顶元素
+stk.pop;//弹出删除栈顶元素
+q.size();		//返回栈中元素的个数
+q.empty();		//检查栈是否为空,若为空返回true,否则返回false
+</code></pre><h2 id="deque"><a class="anchor" href="#deque">#</a> deque</h2><ul><li><p>双端队列 deque 是一个支持在两端高效插入或删除元素的连续线性存储空间。它就像是 vector 和 queue 的结合。</p></li><li><p>与 vector 相比，deque 在头部增删元素仅需要 O (1) 的时间，vector 需要 o (n) 时间</p></li><li><p>与 queue 相比，deque 像数组一样支持随机访问。</p></li></ul><h3 id="声明-5"><a class="anchor" href="#声明-5">#</a> 声明</h3><pre><code class="language-c++">#include&lt;deque&gt;;
+deque&lt;int&gt; a;
+</code></pre><h3 id="操作-4"><a class="anchor" href="#操作-4">#</a> 操作</h3><pre><code class="language-c++">[] 随机访问
+a.begin/end();/*返回deque的头/尾迭代器*/
+a.front/back(); /*返回队头/队尾元素*/
+a.push_back(1); /*从队尾入队*/
+a.push_front(1); /*从队头入队*/
+a.pop_back(); /*从队尾出队*/
+a.pop_front(); /*从队头出队*/
+a.clear(); /*清空队列*/
+</code></pre><h2 id="set"><a class="anchor" href="#set">#</a> set</h2><ul><li><p>头文件 set 主要包括 set 和 multiset 两个容器，分别是 “有序集合” 和 “有序多重集合”</p></li><li><p>前者的元素不能重复，而后者可以包含若干个相等的元素。</p></li><li><p>set 和 multiset 的内部实现是一棵红黑树，它们支持的函数基本相同。</p></li></ul><h3 id="声明-6"><a class="anchor" href="#声明-6">#</a> 声明</h3><pre><code class="language-c++">#include&lt;set&gt;
+using namespace std;
+
+set&lt;T泛型&gt; name;//定义的标准方式
+set&lt;int&gt; a;//元素不能重复
+multiset&lt;double&gt; a;//元素可以重复
+
+struct rec&#123;
+	int a,b;
+	bool operator&lt; (const Rec&amp; t) const
+	&#123;
+		return a&lt;t.a;
+	&#125;;//重载小于号，使其从小到大排列，默认小顶堆
+&#125;; 
+set&lt;rec&gt; s;	// 结构体rec中必须重载小于号函数
+</code></pre><h3 id="sizeemptyclear"><a class="anchor" href="#sizeemptyclear">#</a> size/empty/clear</h3><p>与 vector 类似</p><h3 id="迭代器-2"><a class="anchor" href="#迭代器-2">#</a> 迭代器</h3><ul><li><p>set 和 multiset 的迭代器称为 “双向访问迭代器”，不支持 “随机访问”，支持星号 (*) 解除引用，仅支持”++” 和 --“两个与算术相关的操作。</p></li><li><p>设 it 是一个迭代器，例如 set&lt;int&gt;::iterator it;</p></li><li><p>若把 it++，则 it 会指向 “下一个” 元素。这里的 “下一个” 元素是指在元素从小到大排序的结果中，排在 it 下一名的元素。同理，若把 it--，则 it 将会指向排在 “上一个” 的元素。</p></li></ul><pre><code class="language-c++">set&lt;int&gt;::iterator it = a.begin();
+it++; it--;
+++it; --it;
+
+//遍历时常用
+for(it = s.begin(); it != s.end(); it++)
+    printf(&quot;%d\n&quot;, *it);//解引用
+</code></pre><h3 id="beginend"><a class="anchor" href="#beginend">#</a> begin/end</h3><ul><li>s.begin () 是指向集合中最小元素的迭代器。</li><li>s.end () 是指向集合中<strong>最大元素的下一个位置</strong>的迭代器。换言之，就像 vector 一样，是一个 “前闭后开” 的形式。因此 --s.end () 是指向集合中最大元素的迭代器。</li></ul><h3 id="insert元素插入"><a class="anchor" href="#insert元素插入">#</a> insert 元素插入</h3><ul><li>s.insert (x) 把一个元素 x 插入到集合 s 中</li><li>时间复杂度为 O (logn)。</li><li>在 set 中，若元素已存在，则不会重复插入该元素，对集合的状态无影响。</li></ul><h3 id="find"><a class="anchor" href="#find">#</a> find</h3><ul><li><p>s.find (x) 在集合 s 中查找等于 x 的元素，并返回指向该元素的迭代器。若不存在，则返回 s.end ()。</p><pre><code class="language-c++">if(a.find(x) == a.end()) //判断x在a中是否存在
+</code></pre></li><li><p>时间复杂度为 O (logn)。</p></li></ul><h3 id="lower_boundupper_bound"><a class="anchor" href="#lower_boundupper_bound">#</a> lower_bound/upper_bound</h3><ul><li>s.lower_bound (x) 查找<strong>大于等于</strong> x 的元素中最小的一个，并返回指向该元素的迭代器。</li><li>s.upper_bound (x) 查找<strong>大于</strong> x 的元素中最小的一个，并返回指向该元素的迭代器。</li></ul><h3 id="erase"><a class="anchor" href="#erase">#</a> erase</h3><ul><li>设 x 是一个<strong>元素</strong>，s.erase (x) 从 s 中删除<strong>所有等于 x 的元素</strong>，时间复杂度为 O (k+logn)，其中 k 是被删除的元素个数。</li><li>设 it 是一个<strong>迭代器</strong>，s.erase (it) 从 s 中<strong>删除迭代器 it 指向的元素</strong>，时间复杂度为 O (logn)</li></ul><h3 id="count"><a class="anchor" href="#count">#</a> count</h3><p>s.count (x) 返回集合 s 中<strong>等于 x 的元素个数</strong>，时间复杂度为 O (k +logn)，其中 k 为元素 x 的个数。</p><ul><li>set 不存在返回 1，存在返回 0</li><li>multiset 存在返回个数</li></ul><h2 id="map"><a class="anchor" href="#map">#</a> map</h2><h3 id="声明-7"><a class="anchor" href="#声明-7">#</a> 声明</h3><ul><li>map 容器是一个键值对 key-value 的映射，其内部实现是一棵以 key 为关键码的红黑树。</li><li>Map 的 key 和 value 可以是任意类型，其中 key 必须定义小于号运算符。</li></ul><pre><code class="language-c++">#include&lt;map&gt;
+using namespace std;
+//程序中默认指定了std命令空间，可以省略std:
+std::map&lt;std::string, int&gt;mymap&#123;&#123;"emm", 10&#125;, &#123;"STL", 20&#125;&#125;;
+//创建空容器 + 初始化
+map&lt;key_type, value_type&gt; name;
+
+//此处和数组差不多
+map&lt;int, int&gt; a;//二元组
+a[1] = 2;
+cout &lt;&lt; a[1] &lt;&lt; endl;
+
+map&lt;string, vector&lt;int&gt;&gt; a;
+a[&quot;hhh&quot;] = vector&lt;int&gt;(&#123;1, 2, 3, 4&#125;);
+cout &lt;&lt; a[&quot;hhh&quot;][2] &lt;&lt; endl;
+
+//重载小于号，使从小到大排列
+struct Node &#123;  
+	int d, e;  
+	bool operator &lt; (const Node x) const 
+    &#123;  
+	return d &lt; x.d;      //从小到大排序
+    &#125;   
+    Node(int d, int e):d(d), e(e)&#123;&#125;  
+&#125;; 
+</code></pre><h3 id="sizeemptyclearbeginendcountlower_boundupper_boundmax_sizeswap"><a class="anchor" href="#sizeemptyclearbeginendcountlower_boundupper_boundmax_sizeswap">#</a> size/empty/clear/begin/end/count/lower_bound/upper_bound/max_size/swap</h3><p>均与 set 类似。</p><h3 id="inserterase"><a class="anchor" href="#inserterase">#</a> Insert/erase</h3><p>与 set 类似，但其参数均是 pair&lt;key_type, value_type&gt;</p><pre><code class="language-c++">a.insert(&#123;&quot;a&quot;, &#123;&#125;&#125;);
+</code></pre><h3 id="find-2"><a class="anchor" href="#find-2">#</a> find</h3><p>h.find (x) 在变量名为 h 的 map 中查找 key 为 x 的二元组，用法与 set 类似。</p><pre><code class="language-c++">a.find(key) == a.end()
+</code></pre><h3 id="操作符"><a class="anchor" href="#操作符">#</a> [ ] 操作符</h3><ul><li><p>h [key] 返回 key 映射的 value 的引用，时间复杂度为 O (logn)。</p></li><li><p>[] 操作符是 map 最吸引人的地方。我们可以很方便地通过 h [key] 来得到 key 对应的 value，还可以对 h [key] 进行赋值操作，改变 key 对应的 value。</p></li></ul><h1 id="位运算-常用库函数"><a class="anchor" href="#位运算-常用库函数">#</a> 位运算、常用库函数</h1><h2 id="位运算"><a class="anchor" href="#位运算">#</a> 位运算</h2><h4 id="位运算符"><a class="anchor" href="#位运算符">#</a> 位运算符</h4><p>移位运算符优先级最高</p><p>&amp; 与</p><pre><code class="language-c++">0 &amp; 0 = 0
+0 &amp; 1 = 0
+1 &amp; 1 = 1
+</code></pre><p>| 或</p><pre><code class="language-c++">0 | 0 = 0
+1| 0 = 1
+0 | 1 = 1
+1 | 1 = 1
+</code></pre><p><strong>~ 非</strong></p><pre><code class="language-c++">~ 0 = 1
+~ 1 = 0
+</code></pre><p><strong>^ 异或</strong></p><p>a⊕b = (¬a ∧ b) ∨ (a ∧¬b)</p><pre><code class="language-c++">0 ^ 0 = 0
+1 ^ 1 = 0
+1 ^ 0 = 1
+    
+//int类型的两个数异或
+3 ^ 6 = (011) &amp; (110) = (101) = 5
+</code></pre><p>&gt;&gt; 右移</p><ul><li><p>右边减一个数字位，相当于 / 2</p></li><li><p>a &gt;&gt; k === a/pow(2, k)</p></li></ul><p>&lt;&lt; 左移</p><ul><li><p>右边加 0，相当于 * 2</p></li><li><p>a &lt;&lt; k === a * pow(2, k)</p></li></ul><h4 id="常用操作-2"><a class="anchor" href="#常用操作-2">#</a> 常用操作：</h4><ul><li><p>求 x 的第 k 位数字 x &gt;&gt; k &amp; 1</p><pre><code class="language-c++">a = 110110
+a &gt;&gt; k = 1101
+a &gt;&gt; k &amp; 1 = (1101) &amp; (0001) = 1
+</code></pre></li><li><p>lowbit (x) = x &amp; -x，lowbit (x) 为返回 x 的<strong>最后一位 1 和后 i 面的 0</strong></p></li></ul><pre><code class="language-c++">a = 10101100100000
+~a = 01010011011111
+~a + 1 = 01010011100000
+a &amp; (~a + 1) = 100000
+负数用补码表示，补码和反码一样
+</code></pre><h3 id="常用库函数"><a class="anchor" href="#常用库函数">#</a> 常用库函数</h3><h4 id="reverse-翻转"><a class="anchor" href="#reverse-翻转">#</a> reverse 翻转</h4><p>时间复杂度为 o（n）</p><pre><code class="language-c++">//头文件
+#include &lt;algorithm&gt;
+using namespace std;
+</code></pre><ul><li><p>翻转一个<strong> vector</strong></p><pre><code class="language-c++">reverse(a.begin(), a.end());
+</code></pre></li><li><p>翻转一个<strong>数组</strong></p><p>左闭右合 [,)</p><pre><code class="language-c++">reverse(a, a + n);
+</code></pre></li><li><p>翻转一个<strong>字符串</strong></p><pre><code class="language-c++">reverse(str.begin(),str.end();
+</code></pre></li></ul><h4 id="unique-去重"><a class="anchor" href="#unique-去重">#</a> unique 去重</h4><pre><code class="language-c++">//头文件
+#include &lt;algorithm&gt;
+using namespace std;
+</code></pre><ul><li>使用 unique 的容器重复元素<strong>必须靠在一块</strong></li><li>返回去重之后的尾迭代器（或指针），仍然为前闭后开，即这个迭代器是去重之后末尾元素的下一个位置。</li><li>该函数常用于离散化，利用迭代器（或指针）的减法，可计算出去重后的元素个数。</li></ul><p>把一个 vector 去重：</p><pre><code class="language-c++">int m = unique(a.begin(), a.end()) – a.begin();//m为去重后的元素个数
+a.erase(unique(a.begin(), a.end()), a.end());//删除后面重复元素，保留前面不重复的部分
+</code></pre><p>把一个数组去重，元素存放在下标 1~n：</p><pre><code class="language-c++">int m = unique(a, a + n) – a;//m为去重后的元素个数
+</code></pre><h4 id="random_shuffle-随机打乱"><a class="anchor" href="#random_shuffle-随机打乱">#</a> random_shuffle 随机打乱</h4><pre><code class="language-c++">//头文件
+#include &lt;algorithm&gt;
+using namespace std;
+</code></pre><p>用法与 reverse 相同</p><pre><code class="language-c++">random_shuffle(a.begin(), a.end());
+random_shuffle(a, a + n)
+</code></pre><h4 id="sort"><a class="anchor" href="#sort">#</a> sort</h4><p><strong>头文件：</strong></p><pre><code class="language-C++">#include &lt;algorithm&gt;
+using namespace std;
+</code></pre><ul><li><p>对两个迭代器（或指针）指定的部分进行<strong>快速排序</strong></p></li><li><p>参数和 reverse 的用法一样，可以在第三个参数传入定义大小比较的函数，或者重载 “小于号” 运算符。</p></li><li><p>sort () 函数可以对给定区间所有元素进行排序。它有三个参数 &lt; font color='red'&gt;sort (begin, end, cmp)&lt;/font&gt;，其中 begin 为指向待 sort () 的数组的 &lt; font color='red'&gt; 第一个元素的指针 &lt;/font&gt;，end 为指向待 sort () 的数组的 &lt; font color='red'&gt; 最后一个元素的下一个位置的指针 &lt;/font&gt;，cmp 参数为排序准则，cmp 参数 &lt; font color='red'&gt; 可以不写（即为 sort（begin, end））&lt;/font&gt;，<strong>默认从小到大进行排序</strong>。如果我们想从大到小排序可以将 cmp 参数写为 greater&lt;int&gt;() 就是对 int 数组进行排序，当然 &lt;&gt; 中我们也可以写 double、long、float 等等。</p></li></ul><pre><code class="language-c++">sort(a.begin(),a.end());//从小到大排序
+sort(a.begin(), a.end(), greater&lt;int&gt;());//从大到小排序
+</code></pre><pre><code class="language-c++">int a[MAX_SIZE];
+//全局函数
+bool cmp(int a, int b)//a是否应该排在b的前面 
+&#123;
+    return a &gt; b; //如果a &gt; b, 那么a应该排在b的前面，则为降序排列
+    或者
+    return a &lt; b;//如果a &lt; b，那么a应该排在b的前面，则为升序排列
+&#125;
+sort(a, a + n, cmp);
+</code></pre><p>把自定义的结构体 vector 排序，重载 “小于号” 运算符：</p><pre><code class="language-c++">struct rec
+&#123;
+    int id, x, y; 
+    bool operator &lt;(const rec &amp;t)const 
+	&#123;
+		return x &lt; t.x;
+	&#125;
+&#125;
+vector&lt;rec&gt; a;
+sort(a.begin(), a.end()); 
+</code></pre><h4 id="lower_boundupper_bound-二分"><a class="anchor" href="#lower_boundupper_bound-二分">#</a> lower_bound/upper_bound 二分</h4><p><strong>头文件：</strong></p><pre><code class="language-c++">#include &lt;algorithm&gt;
+using namespace std;
+</code></pre><ul><li><p>lower_bound 的第三个参数传入一个元素 x，在两个迭代器（指针）指定的部分上执行二分查找，返回指向<strong>第一个大于等于 x</strong> 的元素的位置的<strong>迭代器</strong>（指针）。</p><pre><code class="language-c++">int a[] = &#123;1, 2, 3, 4, 5,, 6&#125;;
+int* p = lower_bound(a, a + 5, 7);
+</code></pre><ul><li><p>有序 int 数组中查找大于等于 x 的最小整数的<strong>下标</strong></p><pre><code class="language-c++">int t = lower_bound(a, a + n, x) – a;
+</code></pre></li><li><p>有序 vector&lt;int&gt; 中查找小于等于 x 的最大整数（假设一定存在）</p><pre><code class="language-c++">int y = upper_bound(a.begin(), a.end(), x) - a.begin();
+</code></pre></li></ul></li><li><p>upper_bound 的用法和 lower_bound 大致相同，唯一的区别是查找<strong>第一个大于 x 的元素</strong>。当然，两个迭代器（指针）指定的部分应该是提前排好序的。</p><ul><li>用法与 lower_bound 一致</li></ul></li></ul><div class="tags"><a href="/tags/Algorithm/" rel="tag"><i class="ic i-tag"></i> Algorithm</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2024-03-17 00:19:24" itemprop="dateModified" datetime="2024-03-17T00:19:24+08:00">2024-03-17</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.png" alt="Xh1Xxhg 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="Xh1Xxhg 支付宝"><p>支付宝</p></div><div><img data-src="/images/paypal.png" alt="Xh1Xxhg 贝宝"><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>Xh1Xxhg <i class="ic i-at"><em>@</em></i>十年磨一剑</li><li class="link"><strong>本文链接：</strong> <a href="http://yoursite.com/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" title="c++ 语法基础">http://yoursite.com/Algorithm/c++语法基础课/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfw2t96j20zk0m8x6p.jpg" title="算法知识归纳"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> 算法</span><h3>算法知识归纳</h3></a></div><div class="item right"><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="c++常用函数"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> 算法</span><h3>c++常用函数</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">1.</span> <span class="toc-text">简单顺序结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#main"><span class="toc-number">1.1.</span> <span class="toc-text">main( )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#printf%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">printf 格式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF"><span class="toc-number">2.</span> <span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%BC%BAfor%E5%BE%AA%E7%8E%AF"><span class="toc-number">2.1.</span> <span class="toc-text">增强 for 循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">3.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98"><span class="toc-number">3.1.</span> <span class="toc-text">分配内存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E9%95%BF%E5%BA%A6"><span class="toc-number">3.2.</span> <span class="toc-text">获取数组长度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">3.3.</span> <span class="toc-text">定义变量的默认值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E5%9C%B0%E5%9D%80%E8%B0%83%E7%94%A8%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0"><span class="toc-number">4.1.</span> <span class="toc-text">用地址调用数组元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ascii%E7%A0%81%E5%80%BC"><span class="toc-number">4.2.</span> <span class="toc-text">ASCII 码值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84"><span class="toc-number">4.3.</span> <span class="toc-text">字符数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BE%93%E5%85%A5"><span class="toc-number">4.4.</span> <span class="toc-text">字符串输入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#scanf"><span class="toc-number">4.4.1.</span> <span class="toc-text">scanf</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cin"><span class="toc-number">4.4.2.</span> <span class="toc-text">cin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cingetline"><span class="toc-number">4.4.3.</span> <span class="toc-text">cin.getline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fgets%E5%AE%B9%E6%98%93%E5%87%BA%E9%94%99"><span class="toc-number">4.4.4.</span> <span class="toc-text">fgets（容易出错）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BE%93%E5%87%BA"><span class="toc-number">4.5.</span> <span class="toc-text">字符串输出</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#puts"><span class="toc-number">4.5.1.</span> <span class="toc-text">puts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#printf"><span class="toc-number">4.5.2.</span> <span class="toc-text">printf</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="toc-number">4.6.</span> <span class="toc-text">常用操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#strlen"><span class="toc-number">4.6.1.</span> <span class="toc-text">strlen()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strcmp"><span class="toc-number">4.6.2.</span> <span class="toc-text">strcmp()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strcpy"><span class="toc-number">4.6.3.</span> <span class="toc-text">strcpy()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%9D%E6%83%B3%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6%E4%B8%AD%E5%AD%97%E7%AC%A6%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0"><span class="toc-number">4.7.</span> <span class="toc-text">思想：统计字符中字符出现的次数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%9D%E6%83%B3%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E5%8F%98%E4%B8%BA%E4%B8%8B%E4%B8%80%E4%BD%8D"><span class="toc-number">4.8.</span> <span class="toc-text">思想：小写字母变为下一位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E5%BA%93%E7%B1%BB%E5%9E%8Bstring80%E7%94%A8string%E5%A4%84%E7%90%86%E5%B8%B8%E7%94%A8"><span class="toc-number">4.9.</span> <span class="toc-text">标准库类型 String (80% 用 string 处理，常用)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-number">4.9.1.</span> <span class="toc-text">头文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="toc-number">4.9.2.</span> <span class="toc-text">初始化定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-number">4.9.3.</span> <span class="toc-text">输入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cin-2"><span class="toc-number">4.9.3.1.</span> <span class="toc-text">cin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getline"><span class="toc-number">4.9.3.2.</span> <span class="toc-text">getline</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-number">4.9.4.</span> <span class="toc-text">输出</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cout"><span class="toc-number">4.9.4.1.</span> <span class="toc-text">cout</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#printf%E8%80%97%E6%97%B6%E6%9B%B4%E5%B0%91"><span class="toc-number">4.9.4.2.</span> <span class="toc-text">printf (耗时更少)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#puts-2"><span class="toc-number">4.9.4.3.</span> <span class="toc-text">puts</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#empty"><span class="toc-number">4.9.5.</span> <span class="toc-text">empty</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#size"><span class="toc-number">4.9.6.</span> <span class="toc-text">size</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#string%E6%AF%94%E8%BE%83"><span class="toc-number">4.9.7.</span> <span class="toc-text">string 比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC"><span class="toc-number">4.9.8.</span> <span class="toc-text">赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%8A%A0"><span class="toc-number">4.9.9.</span> <span class="toc-text">相加</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%AD%97%E7%AC%A6"><span class="toc-number">4.9.10.</span> <span class="toc-text">处理字符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">5.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E6%88%90"><span class="toc-number">5.1.</span> <span class="toc-text">组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E7%94%A8"><span class="toc-number">5.2.</span> <span class="toc-text">调用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E5%92%8C%E5%AE%9A%E4%B9%89"><span class="toc-number">5.3.</span> <span class="toc-text">声明和定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A2%E5%8F%82%E5%88%97%E8%A1%A8"><span class="toc-number">5.4.</span> <span class="toc-text">形参列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.5.</span> <span class="toc-text">返回类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%B1%80%E9%83%A82%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="toc-number">5.6.</span> <span class="toc-text">全局 &#x2F; 局部 &#x2F; 2 静态变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-number">5.7.</span> <span class="toc-text">参数传递</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E5%80%BC%E5%8F%82%E6%95%B0int-a"><span class="toc-number">5.7.1.</span> <span class="toc-text">传值参数（int a）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E5%BC%95%E7%94%A8%E5%8F%82%E6%95%B0int-a"><span class="toc-number">5.7.2.</span> <span class="toc-text">传引用参数（int &amp;a）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD"><span class="toc-number">5.7.3.</span> <span class="toc-text">重载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%BD%A2%E5%8F%82"><span class="toc-number">5.8.</span> <span class="toc-text">数组形参</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B%E5%92%8Creturn%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.9.</span> <span class="toc-text">返回类型和 return 语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E5%BD%A2%E5%BC%8F"><span class="toc-number">5.9.1.</span> <span class="toc-text">两种形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B%E5%92%8Creturn%E8%AF%AD%E5%8F%A5-2"><span class="toc-number">5.9.2.</span> <span class="toc-text">返回类型和 return 语句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E9%80%92%E5%BD%92"><span class="toc-number">5.10.</span> <span class="toc-text">函数递归</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB%E7%BB%93%E6%9E%84%E4%BD%93-%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8"><span class="toc-number">6.</span> <span class="toc-text">类 &amp; 结构体 指针 &amp; 引用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">6.1.</span> <span class="toc-text">类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">6.2.</span> <span class="toc-text">结构体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">6.3.</span> <span class="toc-text">内存空间分配方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">6.4.</span> <span class="toc-text">指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">6.5.</span> <span class="toc-text">区别 &amp; 注意点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%89%B9%E6%AE%8A%E7%9A%84%E6%8C%87%E9%92%88"><span class="toc-number">6.6.</span> <span class="toc-text">数组 —— 特殊的指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c%E7%9A%84%E5%BC%95%E7%94%A8%E8%AF%AD%E6%B3%95"><span class="toc-number">6.7.</span> <span class="toc-text">C++ 的引用语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8"><span class="toc-number">6.8.</span> <span class="toc-text">单链表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#stl"><span class="toc-number">7.</span> <span class="toc-text">STL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vector"><span class="toc-number">7.1.</span> <span class="toc-text">vector</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-number">7.1.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#size-2"><span class="toc-number">7.1.2.</span> <span class="toc-text">size( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#empty-2"><span class="toc-number">7.1.3.</span> <span class="toc-text">empty( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear"><span class="toc-number">7.1.4.</span> <span class="toc-text">clear</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-number">7.1.5.</span> <span class="toc-text">迭代器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#begin"><span class="toc-number">7.1.5.1.</span> <span class="toc-text">begin( )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#end"><span class="toc-number">7.1.5.2.</span> <span class="toc-text">end( )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%81%8D%E5%8E%86%E6%96%B9%E6%B3%95"><span class="toc-number">7.1.5.3.</span> <span class="toc-text">遍历方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#front-back"><span class="toc-number">7.1.5.4.</span> <span class="toc-text">front &#x2F; back</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#push_back-pop_back"><span class="toc-number">7.1.5.5.</span> <span class="toc-text">push_back() &#x2F; pop_back()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#queue"><span class="toc-number">7.2.</span> <span class="toc-text">queue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97queue"><span class="toc-number">7.2.1.</span> <span class="toc-text">循环队列 queue</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-2"><span class="toc-number">7.2.1.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C"><span class="toc-number">7.2.1.2.</span> <span class="toc-text">操作</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97priority_queue"><span class="toc-number">7.2.2.</span> <span class="toc-text">优先队列 priority_queue</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-3"><span class="toc-number">7.2.2.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C-2"><span class="toc-number">7.2.2.2.</span> <span class="toc-text">操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%85%E7%A9%BA%E9%98%9F%E5%88%97"><span class="toc-number">7.2.2.3.</span> <span class="toc-text">清空队列</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stack"><span class="toc-number">7.3.</span> <span class="toc-text">stack</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-4"><span class="toc-number">7.3.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C-3"><span class="toc-number">7.3.2.</span> <span class="toc-text">操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deque"><span class="toc-number">7.4.</span> <span class="toc-text">deque</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-5"><span class="toc-number">7.4.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C-4"><span class="toc-number">7.4.2.</span> <span class="toc-text">操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set"><span class="toc-number">7.5.</span> <span class="toc-text">set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-6"><span class="toc-number">7.5.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sizeemptyclear"><span class="toc-number">7.5.2.</span> <span class="toc-text">size&#x2F;empty&#x2F;clear</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-2"><span class="toc-number">7.5.3.</span> <span class="toc-text">迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#beginend"><span class="toc-number">7.5.4.</span> <span class="toc-text">begin&#x2F;end</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#insert%E5%85%83%E7%B4%A0%E6%8F%92%E5%85%A5"><span class="toc-number">7.5.5.</span> <span class="toc-text">insert 元素插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-number">7.5.6.</span> <span class="toc-text">find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lower_boundupper_bound"><span class="toc-number">7.5.7.</span> <span class="toc-text">lower_bound&#x2F;upper_bound</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#erase"><span class="toc-number">7.5.8.</span> <span class="toc-text">erase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#count"><span class="toc-number">7.5.9.</span> <span class="toc-text">count</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">7.6.</span> <span class="toc-text">map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E-7"><span class="toc-number">7.6.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sizeemptyclearbeginendcountlower_boundupper_boundmax_sizeswap"><span class="toc-number">7.6.2.</span> <span class="toc-text">size&#x2F;empty&#x2F;clear&#x2F;begin&#x2F;end&#x2F;count&#x2F;lower_bound&#x2F;upper_bound&#x2F;max_size&#x2F;swap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#inserterase"><span class="toc-number">7.6.3.</span> <span class="toc-text">Insert&#x2F;erase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#find-2"><span class="toc-number">7.6.4.</span> <span class="toc-text">find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">7.6.5.</span> <span class="toc-text">[ ] 操作符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0"><span class="toc-number">8.</span> <span class="toc-text">位运算、常用库函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="toc-number">8.1.</span> <span class="toc-text">位运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">8.1.0.1.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C-2"><span class="toc-number">8.1.0.2.</span> <span class="toc-text">常用操作：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0"><span class="toc-number">8.1.1.</span> <span class="toc-text">常用库函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#reverse-%E7%BF%BB%E8%BD%AC"><span class="toc-number">8.1.1.1.</span> <span class="toc-text">reverse 翻转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#unique-%E5%8E%BB%E9%87%8D"><span class="toc-number">8.1.1.2.</span> <span class="toc-text">unique 去重</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#random_shuffle-%E9%9A%8F%E6%9C%BA%E6%89%93%E4%B9%B1"><span class="toc-number">8.1.1.3.</span> <span class="toc-text">random_shuffle 随机打乱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sort"><span class="toc-number">8.1.1.4.</span> <span class="toc-text">sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lower_boundupper_bound-%E4%BA%8C%E5%88%86"><span class="toc-number">8.1.1.5.</span> <span class="toc-text">lower_bound&#x2F;upper_bound 二分</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" rel="bookmark" title="c++常用函数">c++常用函数</a></li><li class="active"><a href="/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" rel="bookmark" title="c++语法基础">c++语法基础</a></li><li><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" rel="bookmark" title="算法知识归纳">算法知识归纳</a></li><li><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" rel="bookmark" title="题解记录_acwing">题解记录_acwing</a></li><li><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/" rel="bookmark" title="Acwing每日一题">Acwing每日一题</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="Xh1Xxhg" data-src="/images/avatar.jpg"><p class="name" itemprop="name">Xh1Xxhg</p><div class="description" itemprop="description">My 网安之路</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">8</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">3</span> <span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">3</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL1hoMVh4aGc=" title="https:&#x2F;&#x2F;github.com&#x2F;Xh1Xxhg"><i class="ic i-github"></i></span> <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9oeGgxX2VtYWls" title="https:&#x2F;&#x2F;twitter.com&#x2F;hxh1_email"><i class="ic i-twitter"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly95LnFxLmNvbS9uL3J5cXEvcGxheWxpc3QvMzY1MDEyNzIxMQ==" title="https:&#x2F;&#x2F;y.qq.com&#x2F;n&#x2F;ryqq&#x2F;playlist&#x2F;3650127211"><i class="ic i-cloud-music"></i></span> <a href="/hxh1_email@163.com" title="hxh1_email@163.com" class="item email"><i class="ic i-envelope"></i></a></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/CTF/" title="分类于 CTF">CTF</a></div><span><a href="/CTF/Misc/" title="CTF-MISC总结">CTF-MISC总结</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" title="算法知识归纳">算法知识归纳</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/c++%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" title="c++语法基础">c++语法基础</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E5%BC%80%E5%8F%91/" title="分类于 开发">开发</a></div><span><a href="/As%20Developers/Hexo+Shoka%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="Github Pages+Hexo搭建个人Blog">Github Pages+Hexo搭建个人Blog</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E5%BC%80%E5%8F%91/" title="分类于 开发">开发</a></div><span><a href="/As%20Developers/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="SpringBoot3+Vue2后台管理系统">SpringBoot3+Vue2后台管理系统</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_%E8%93%9D%E6%A1%A5%E6%9D%AF/" title="Acwing每日一题">Acwing每日一题</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/c++%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/" title="c++常用函数">c++常用函数</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E7%AE%97%E6%B3%95/" title="分类于 算法">算法</a></div><span><a href="/Algorithm/%E9%A2%98%E8%A7%A3%E8%AE%B0%E5%BD%95_acwing/" title="题解记录_acwing">题解记录_acwing</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; <span itemprop="copyrightYear">2024</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">Xh1Xxhg @ Xh1Xxhg's Home</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">128k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">1:57</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"Algorithm/c++语法基础课/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script></body></html><!-- rebuild by hrmmi -->
