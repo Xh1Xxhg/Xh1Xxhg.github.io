@@ -5260,6 +5260,7 @@ int main() &amp;#123;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;单调队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单调队列&#34;&gt;#&lt;/a&gt; 单调队列&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9hY3Rpdml0eS9jb250ZW50L3Byb2JsZW0vY29udGVudC85ODAzLw==&#34;&gt;AcWing 1413. 矩形牛棚&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;树状数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#树状数组&#34;&gt;#&lt;/a&gt; 树状数组&lt;/h2&gt;
 &lt;h2 id=&#34;状态压缩dp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#状态压缩dp&#34;&gt;#&lt;/a&gt; 状态压缩 DP&lt;/h2&gt;
 &lt;h2 id=&#34;线性dp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性dp&#34;&gt;#&lt;/a&gt; 线性 DP&lt;/h2&gt;
